@@ -1,13 +1,10 @@
 # CLAUDE.md — HOMM Olden Era datamine + reference site
 
-Project notes for future Claude Code sessions in this repo.
+Project notes for future agent sessions in this repo.
 
 ## What this is
 
-A datamine of *Heroes of Might and Magic: Olden Era* (Unfrozen / Hooded Horse, Unity / IL2CPP build) plus a single-page React reference site published to GitHub Pages at <https://alcaras.github.io/homm-olden/>.
-
-GitHub repo: `alcaras/homm-olden`. Pages source = `/docs` on `main`, with a `.nojekyll` file so GitHub serves the raw files instead of running Jekyll.
-
+A datamine of *Heroes of Might and Magic: Olden Era*
 ## Layout
 
 ```
