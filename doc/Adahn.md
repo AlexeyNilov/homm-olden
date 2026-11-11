@@ -14,6 +14,10 @@
 "insightSkill": 150,
 "thaumaturgySkill": 150,
 
+## Combat Tactics
+
+* Basic Battlecraft: wait for +10% Attack
+
 ## Build
 
 ## Class data

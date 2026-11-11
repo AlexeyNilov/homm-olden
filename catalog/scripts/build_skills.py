@@ -10,6 +10,8 @@ Inputs:
   catalog/raw/DB/heroes_skills/skills/skills.json
   catalog/raw/DB/heroes_skills/sub_skills/sub_skills.json
   catalog/raw/Lang/english/texts/heroSkills.json
+  catalog/raw/Lang/args/heroSkills.json + DB/info localization scripts
+  catalog/raw/DB buffs, side buffs, hero abilities, and obstacles (argument values)
   docs/data.js  (SUBCLASSES + SKILL_COLUMNS for skill-code → skill-id map)
 
 Output:
@@ -20,6 +22,7 @@ from __future__ import annotations
 
 import json
 import re
+from decimal import Decimal
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -201,10 +204,109 @@ def format_signed(v) -> str:
 # Build
 # --------------------------------------------------------------------------- #
 
+def data_path(data, path: str):
+    """Read a game field path such as bonuses[0].parameters[1]."""
+    for key, index in re.findall(r"([\w]+)|\[(\d+)\]", path):
+        data = data[key] if key else data[int(index)]
+    return data
+
+
+class DescriptionResolver:
+    """Resolve catalog descriptions using the game's localization scripts."""
+
+    def __init__(self):
+        self.args = {t["sid"]: t["args"] for t in load_json_strip(
+            RAW / "Lang/args/heroSkills.json")["tokensArgs"]}
+        self.scripts = {}
+        for script in ("info_hero_skills/hero_skill", "info_hero_skills/hero_skill_faction",
+                       "info_script_magic/magic_world_neutral"):
+            source = (RAW / f"DB/info/{script}.script").read_text(
+                encoding="utf-8-sig")
+            source = re.sub(r"/\*.*?\*/|//[^\n]*", "", source, flags=re.DOTALL)
+            for kind, name, body in re.findall(r"(\w+)\s+(\w+)\s*\{([^}]*)\}", source):
+                self.scripts[name] = (kind, body)
+        self.databases = {}
+        for command, folder in (
+            ("DbBuff", "buffs"),
+            ("DbSideBuff", "side_buffs/side_buff_base"),
+            ("DbAbility", "heroes_abilities/heroes_abilities_base"),
+            ("DbObstacle", "field_objects/obstacles"),
+        ):
+            self.databases[command] = {
+                row["id"]: row
+                for path in sorted((RAW / "DB" / folder).glob("*.json"))
+                for row in load_json_strip(path).get("array", [])
+            }
+        # Bonus wrappers install a unit buff; DbSideBuff exposes that buff's actions.
+        for path in sorted((RAW / "DB/side_buffs/bonus_buff_infos").glob("*.json")):
+            for row in load_json_strip(path).get("array", []):
+                if row.get("sid") in self.databases["DbBuff"]:
+                    self.databases["DbSideBuff"][row["id"]] = self.databases["DbBuff"][row["sid"]]
+
+    def argument(self, name: str, level: dict, subskill: dict, rank: int) -> str:
+        """Evaluate the lookup and arithmetic operations used by skill arguments."""
+        kind, body = self.scripts[name]
+        variables = {}
+
+        def value(token):
+            if token.startswith('"'):
+                return token[1:-1]
+            return variables[token]
+
+        for command, arguments in re.findall(r"(\w+)\s*\(([^)]*)\)", body):
+            target, *operands = [part.strip() for part in arguments.split(",")]
+            operands = [value(part) for part in operands]
+            if command in ("CurrentSkillParameter", "CurrentSubSkill"):
+                result = data_path(level if command == "CurrentSkillParameter" else subskill, operands[0])
+            elif command == "CurrentSkillLevel":
+                result = rank
+            elif command in self.databases:
+                record = self.databases[command][operands[0]]
+                if command == "DbAbility":
+                    record = record["levels"][int(operands[1])]
+                result = data_path(record, operands[-1])
+            elif command in ("Add", "Mul"):
+                left, right = (Decimal(str(operand)) for operand in operands)
+                if command == "Add":
+                    result = left + right
+                else:
+                    result = left * right
+            elif command == "Text":
+                result = operands[0]
+            else:
+                raise ValueError(f"Unsupported skill operation: {command}")
+            variables[target] = result
+        result = variables["return"]
+        number = Decimal(str(result))
+        # The mod* formatters show magnitudes; the text describes the direction.
+        if kind.startswith("mod"):
+            number = abs(number)
+        if kind in ("modPercentNumeric", "modFloatPercentF1Numeric"):
+            number *= 100
+        text = format(number, "f")
+        return text.rstrip("0").rstrip(".") if "." in text else text
+
+    def description(self, sid: str, tokens: dict, level: dict, rank: int,
+                    subskill: dict | None = None) -> str:
+        """Fill positional placeholders from their named localization arguments."""
+        def replace(match):
+            name = self.args[sid][int(match[1])]
+            if "|" in name:
+                # The game supplies a formula for tooltips without a selected hero.
+                return tokens[name.split("|", 1)[1]]
+            try:
+                return self.argument(name, level, subskill or {}, rank)
+            except (KeyError, IndexError, ValueError) as error:
+                raise ValueError(f"Cannot resolve {sid} argument {name}") from error
+
+        return re.sub(r"\{(\d+)\}", replace, tokens.get(sid, ""))
+
+
 def build():
     skills    = load_json_strip(SKILLS_JSON)["array"]
     subskills = {s["id"]: s for s in load_json_strip(SUB_SKILLS_JSON)["array"]}
     tokens    = load_tokens(SKILLS_TOKENS)
+    resolver = DescriptionResolver()
     subclasses = load_subclasses_from_data_js()
     heroes     = load_heroes_from_data_js()
 
@@ -269,7 +371,8 @@ def build():
         name_sid = sk.get("name") or f"{sid}_name"
         desc_sid = sk.get("desc") or f"{sid}_desc"
         name = tokens.get(name_sid, sid)
-        base_desc = tokens.get(desc_sid, "")
+        first_level = sk.get("parametersPerLevel", [{}])[0]
+        base_desc = resolver.description(desc_sid, tokens, first_level, 1)
         # Faction skills — flag for the page
         faction_display = None
         if group == "faction":
@@ -281,7 +384,10 @@ def build():
         levels = []
         for li, lvl in enumerate(sk.get("parametersPerLevel", []), 1):
             level_name = tokens.get(lvl.get("name", ""), "") or f"Level {li}"
-            level_desc = tokens.get(lvl.get("desc", ""), "") or base_desc
+            level_desc_sid = lvl.get("desc") or desc_sid
+            if not tokens.get(level_desc_sid):
+                level_desc_sid = desc_sid
+            level_desc = resolver.description(level_desc_sid, tokens, lvl, li)
             # Bonuses summarized
             bons = [bonus_summary(b) for b in (lvl.get("bonuses") or [])]
             # Subskills offered at this level
@@ -291,7 +397,7 @@ def build():
                 if not ss:
                     continue
                 ss_name = tokens.get(ss.get("name", ""), ssid)
-                ss_desc = tokens.get(ss.get("desc", ""), "")
+                ss_desc = resolver.description(ss.get("desc", ""), tokens, lvl, li, ss)
                 subs.append({
                     "id":   ssid,
                     "name": ss_name,
