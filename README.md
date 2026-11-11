@@ -45,24 +45,7 @@ JSONs and the site from a fresh checkout, you need a copy of the game.
 2. Symlink or copy that folder into the repo root.
 3. Extract the game data:
    ```bash
-   python3 -c "
-   import zipfile, os
-   src = 'HeroesOldenEra_Data/StreamingAssets/Core.zip'
-   dst = 'catalog/raw'
-   os.makedirs(dst, exist_ok=True)
-   with zipfile.ZipFile(src) as z:
-       for info in z.infolist():
-           name = info.filename
-           if not info.flag_bits & 0x800:
-               try: name = name.encode('cp437').decode('utf-8')
-               except Exception: pass
-           out = os.path.join(dst, name)
-           if name.endswith('/'):
-               os.makedirs(out, exist_ok=True); continue
-           os.makedirs(os.path.dirname(out), exist_ok=True)
-           with z.open(info) as s, open(out, 'wb') as d:
-               d.write(s.read())
-   "
+   python scripts/extract_data.py 
    ```
 4. Build the catalog and docs:
    ```bash
@@ -74,10 +57,6 @@ JSONs and the site from a fresh checkout, you need a copy of the game.
    python3 catalog/scripts/analysis_tier_list.py
    python3 catalog/scripts/analysis_hero_score.py
    python3 catalog/scripts/analysis_magic_coverage.py
-   ```
-5. Preview the site (requires Ruby + Jekyll):
-   ```bash
-   cd docs && bundle exec jekyll serve
    ```
 
 ## Notes
