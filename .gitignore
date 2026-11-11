@@ -5,6 +5,9 @@ HeroesOldenEra_Data
 # Extracted game data (also copyrighted; regenerated from Core.zip)
 catalog/raw/
 
+# DB
+*.sqlite
+
 # Python / Jekyll
 __pycache__/
 *.pyc
