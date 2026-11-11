@@ -3,8 +3,8 @@
 ## Most likely skills
 
 1. Necromancy
-
 2. Battlecraft
+    * Fortifying vs Overwatch
 
 "sorcerySkill": 150,
 "intelligenceSkill": 150,
@@ -16,7 +16,9 @@
 
 ## Combat Tactics
 
-* Basic Battlecraft: wait for +10% Attack
+- Basic Battlecraft: 
+    * wait for + 10-20% Attack
+    * skip for + 10-20% Defense and +20 Def (from Fortifying skill)
 
 ## Build
 
