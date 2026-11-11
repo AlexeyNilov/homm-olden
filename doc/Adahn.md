@@ -1,26 +1,36 @@
-# Adahn Wight Master
+# Adahn Wight DD
 
 ## Most likely skills
 
 1. Necromancy
+    * Gravesoil
+    * Eternal Service
 2. Battlecraft
-    * Fortifying vs Overwatch
+    * Fortifying
+    * Preemptive Strike
+3. Thaumaturgy (150)
+    * Brilliance: for +2 Knowledge
+    * Archmage: for +1 lvl to "Shade Cloak"
+4. Avatar (150)
+5. Arcane
+6. Logistics
+7. Offense: for focus points and +1 damage
+8. Luck: for luck debuff and counter removal
 
-"sorcerySkill": 150,
-"intelligenceSkill": 150,
-"summonAvatarSkill": 150,
-"battleMagicSkill": 150,
-"luckSkill": 150,
-"insightSkill": 150,
-"thaumaturgySkill": 150,
+Nightshade: for -1 cooldown and +1 lvl?
+Tactics: for temp units and reposte
 
 ## Combat Tactics
 
 - Basic Battlecraft: 
-    * wait for + 10-20% Attack
-    * skip for + 10-20% Defense and +20 Def (from Fortifying skill)
+    * Wait for + 10-20% Attack
+    * Skip for + 10-20% Defense; +20 Def (from Fortifying skill); Preemptive Strike
+
+- Attack from "Shade Cloak lvl2+" for + 25-50% Dmg 
 
 ## Build
+
+https://olden.gg/Adahn/BgBL_wALAwBJAE0ADgMAXgBhAB8DAN0A2gAVAwCMAIsAHAMAwgDGABADAGoAcAABAwADAAEAEQMAcwB0AAEATQAAAAAABwAuAAwALgAMAC4ADAAAAAAAAAAA
 
 ## Class data
 
