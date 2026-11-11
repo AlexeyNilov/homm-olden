@@ -15,7 +15,7 @@ window.OE_SKILLS_DATA = {
           "name": "Basic Offense",
           "desc": "Friendly creatures’ basic attacks deal +{0}% Damage.",
           "bonuses": [
-            "Friendly creatures deal +15% damage on basic attack"
+            "Friendly creatures deal +10% damage on basic attack"
           ],
           "subskills": []
         },
@@ -25,7 +25,7 @@ window.OE_SKILLS_DATA = {
           "name": "Advanced Offense",
           "desc": "Friendly creatures’ basic attacks deal +{0}% Damage.",
           "bonuses": [
-            "Friendly creatures deal +20% damage on basic attack"
+            "Friendly creatures deal +15% damage on basic attack"
           ],
           "subskills": [
             {
@@ -51,7 +51,7 @@ window.OE_SKILLS_DATA = {
           "name": "Expert Offense",
           "desc": "Friendly creatures’ basic attacks deal +{0}% Damage.",
           "bonuses": [
-            "Friendly creatures deal +25% damage on basic attack"
+            "Friendly creatures deal +20% damage on basic attack"
           ],
           "subskills": [
             {
@@ -62,11 +62,11 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_assault_4",
               "name": "Reality Wardens",
-              "desc": "Friendly creatures deal +{0}% Damage to summoned enemy creatures. This bonus is doubled if the hero knows “Nightshade Magic.”"
+              "desc": "–{0}% to enemy hero Spell Power. This bonus is doubled if the hero knows “Nightshade Magic.”"
             },
             {
               "id": "sub_skill_assault_5",
-              "name": "Firmness",
+              "name": "Unstoppable Force",
               "desc": "–{0}% Defense to enemy creatures."
             }
           ]
@@ -162,7 +162,7 @@ window.OE_SKILLS_DATA = {
           "name": "Basic Defense",
           "desc": "Friendly creatures take –{0}% Damage from basic attacks.",
           "bonuses": [
-            "Friendly creatures take -15% damage on basic attack"
+            "Friendly creatures take -10% damage on basic attack"
           ],
           "subskills": []
         },
@@ -172,7 +172,7 @@ window.OE_SKILLS_DATA = {
           "name": "Advanced Defense",
           "desc": "Friendly creatures take –{0}% Damage from basic attacks.",
           "bonuses": [
-            "Friendly creatures take -20% damage on basic attack"
+            "Friendly creatures take -15% damage on basic attack"
           ],
           "subskills": [
             {
@@ -198,7 +198,7 @@ window.OE_SKILLS_DATA = {
           "name": "Expert Defense",
           "desc": "Friendly creatures take –{0}% Damage from basic attacks.",
           "bonuses": [
-            "Friendly creatures take -25% damage on basic attack"
+            "Friendly creatures take -20% damage on basic attack"
           ],
           "subskills": [
             {
@@ -213,7 +213,7 @@ window.OE_SKILLS_DATA = {
             },
             {
               "id": "sub_skill_protection_5",
-              "name": "Unstoppable Force",
+              "name": "Firmness",
               "desc": "–{0}% Attack to enemy creatures."
             }
           ]
@@ -731,12 +731,12 @@ window.OE_SKILLS_DATA = {
           "subskills": [
             {
               "id": "sub_skill_logistic_2",
-              "name": "Leaps and Bounds",
-              "desc": "The hero restores {0} Movement point(s) after each victory in battle."
+              "name": "Strong Mounts",
+              "desc": "+{0}% more Movement points on the global map."
             },
             {
               "id": "sub_skill_logistic_4",
-              "name": "Strong Mounts",
+              "name": "Pathfinding Magic",
               "desc": "Neutral Global Map spells cost –{0} mana. This bonus is doubled if the hero knows “Scouting.”"
             },
             {
@@ -877,9 +877,9 @@ window.OE_SKILLS_DATA = {
           ],
           "subskills": [
             {
-              "id": "sub_skill_enlightenment_1",
-              "name": "Enlightenment",
-              "desc": "The hero gains an additional +{0}% XP."
+              "id": "sub_skill_enlightenment_1_alt",
+              "name": "Understanding the Ephemeral",
+              "desc": "The hero and friendly creatures deal +{0}% Damage to all summoned creatures."
             },
             {
               "id": "sub_skill_enlightenment_2",
@@ -1003,7 +1003,7 @@ window.OE_SKILLS_DATA = {
           "name": "Basic Sorcery",
           "desc": "+{0}% Magic Damage dealt.",
           "bonuses": [
-            "Hero magicAttackPerBonus +0.10"
+            "Hero magicAttackPerBonus +0.20"
           ],
           "subskills": []
         },
@@ -1013,13 +1013,13 @@ window.OE_SKILLS_DATA = {
           "name": "Advanced Sorcery",
           "desc": "+{0}% Magic Damage dealt.",
           "bonuses": [
-            "Hero magicAttackPerBonus +0.20"
+            "Hero magicAttackPerBonus +0.25"
           ],
           "subskills": [
             {
               "id": "sub_skill_sorcery_6",
               "name": "Magical Influence",
-              "desc": "The cooldowns of all friendly creature abilities are reduced by {0} round(s)."
+              "desc": "Enemy spells cost +{0} mana."
             },
             {
               "id": "sub_skill_sorcery_2",
@@ -1043,9 +1043,9 @@ window.OE_SKILLS_DATA = {
           ],
           "subskills": [
             {
-              "id": "sub_skill_sorcery_4",
-              "name": "Piercing Spells",
-              "desc": "Offensive spells ignore {0}% of target’s magic resistance."
+              "id": "sub_skill_sorcery_7",
+              "name": "Summoning Sorcery",
+              "desc": "All summoned creatures in battle gain +{0}% health and deal +{0}% Damage."
             },
             {
               "id": "sub_skill_sorcery_5",
@@ -1139,7 +1139,7 @@ window.OE_SKILLS_DATA = {
     {
       "id": "skill_magic_day",
       "name": "Daylight Magic",
-      "baseDesc": "The hero can learn tier‑{0} Daylight spells.",
+      "baseDesc": "The hero can learn Daylight spells up to tier {0}.",
       "group": "school",
       "skillType": "Common",
       "factionId": null,
@@ -1148,7 +1148,7 @@ window.OE_SKILLS_DATA = {
           "level": 1,
           "icon": "skill_magic_day",
           "name": "Basic Daylight Magic",
-          "desc": "The hero can learn tier‑{0} Daylight spells.",
+          "desc": "The hero can learn Daylight spells up to tier {0}.",
           "bonuses": [
             "Hero magicSchoolSet day",
             "Hero magicSchoolSet day"
@@ -1159,7 +1159,7 @@ window.OE_SKILLS_DATA = {
           "level": 2,
           "icon": "skill_magic_day_2",
           "name": "Advanced Daylight Magic",
-          "desc": "The hero can learn tier‑{0} Daylight spells. Daylight spells gain +{1} level(s).",
+          "desc": "The hero can learn Daylight spells up to tier {0}. Daylight spells gain +{1} level(s).",
           "bonuses": [
             "Hero magicSchoolSet day",
             "Hero magicSchoolSet day",
@@ -1187,7 +1187,7 @@ window.OE_SKILLS_DATA = {
           "level": 3,
           "icon": "skill_magic_day_3",
           "name": "Expert Daylight Magic",
-          "desc": "The hero can learn tier‑{0} Daylight spells, and can learn Daylight spells unlocked in the Observatory, without visiting a Mage Guild. Daylight spells gain +{1} level(s).",
+          "desc": "The hero can learn Daylight spells up to tier {0}, without visiting a Mage Guild, provided they are unlocked in the Observatory. Daylight spells gain +{1} level(s).",
           "bonuses": [
             "Hero magicSchoolSet day",
             "Hero magicSchoolSet day",
@@ -1292,7 +1292,7 @@ window.OE_SKILLS_DATA = {
     {
       "id": "skill_magic_night",
       "name": "Nightshade Magic",
-      "baseDesc": "The hero can learn tier‑{0} Nightshade spells.",
+      "baseDesc": "The hero can learn Nightshade spells up to tier {0}.",
       "group": "school",
       "skillType": "Common",
       "factionId": null,
@@ -1301,7 +1301,7 @@ window.OE_SKILLS_DATA = {
           "level": 1,
           "icon": "skill_magic_night",
           "name": "Basic Nightshade Magic",
-          "desc": "The hero can learn tier‑{0} Nightshade spells.",
+          "desc": "The hero can learn Nightshade spells up to tier {0}.",
           "bonuses": [
             "Hero magicSchoolSet night",
             "Hero magicSchoolSet night"
@@ -1312,7 +1312,7 @@ window.OE_SKILLS_DATA = {
           "level": 2,
           "icon": "skill_magic_night_2",
           "name": "Advanced Nightshade Magic",
-          "desc": "The hero can learn tier‑{0} Nightshade spells. Nightshade spells gain +{1} level(s).",
+          "desc": "The hero can learn Nightshade spells up to tier {0}. Nightshade spells gain +{1} level(s).",
           "bonuses": [
             "Hero magicSchoolSet night",
             "Hero magicSchoolSet night",
@@ -1340,7 +1340,7 @@ window.OE_SKILLS_DATA = {
           "level": 3,
           "icon": "skill_magic_night_3",
           "name": "Expert Nightshade Magic",
-          "desc": "The hero can learn tier‑{0} Nightshade spells, and can learn Nightshade spells unlocked in the Observatory, without visiting a Mage Guild. Nightshade spells gain +{1} level(s).",
+          "desc": "The hero can learn Nightshade spells up to tier {0}, without visiting a Mage Guild, provided they are unlocked in the Observatory. Nightshade spells gain +{1} level(s).",
           "bonuses": [
             "Hero magicSchoolSet night",
             "Hero magicSchoolSet night",
@@ -1355,8 +1355,8 @@ window.OE_SKILLS_DATA = {
             },
             {
               "id": "sub_skill_magic_night_5",
-              "name": "Hour of the Wolf",
-              "desc": "–{0}% Attack and Defense to enemy creatures."
+              "name": "Hindrance Aura",
+              "desc": "Enemy loses {0} Focus Charge(s) at the beginning of each battle round, <b>except the first</b>."
             },
             {
               "id": "sub_skill_magic_night_1",
@@ -1445,7 +1445,7 @@ window.OE_SKILLS_DATA = {
     {
       "id": "skill_magic_space",
       "name": "Arcane Magic",
-      "baseDesc": "The hero can learn tier‑{0} Arcane spells.",
+      "baseDesc": "The hero can learn Arcane spells up to tier {0}.",
       "group": "school",
       "skillType": "Common",
       "factionId": null,
@@ -1454,7 +1454,7 @@ window.OE_SKILLS_DATA = {
           "level": 1,
           "icon": "skill_magic_space",
           "name": "Basic Arcane Magic",
-          "desc": "The hero can learn tier‑{0} Arcane spells.",
+          "desc": "The hero can learn Arcane spells up to tier {0}.",
           "bonuses": [
             "Hero magicSchoolSet space",
             "Hero magicSchoolSet space"
@@ -1465,7 +1465,7 @@ window.OE_SKILLS_DATA = {
           "level": 2,
           "icon": "skill_magic_space_2",
           "name": "Advanced Arcane Magic",
-          "desc": "The hero can learn tier‑{0} Arcane spells. Arcane spells gain +{1} level(s).",
+          "desc": "The hero can learn Arcane spells up to tier {0}. Arcane spells gain +{1} level(s).",
           "bonuses": [
             "Hero magicSchoolSet space",
             "Hero magicSchoolSet space",
@@ -1493,7 +1493,7 @@ window.OE_SKILLS_DATA = {
           "level": 3,
           "icon": "skill_magic_space_3",
           "name": "Expert Arcane Magic",
-          "desc": "The hero can learn tier‑{0} Arcane spells, and can learn Arcane spells unlocked in the Observatory, without visiting a Mage Guild. Arcane spells gain +{1} level(s).",
+          "desc": "The hero can learn Arcane spells up to tier {0}, without visiting a Mage Guild, provided they are unlocked in the Observatory. Arcane spells gain +{1} level(s).",
           "bonuses": [
             "Hero magicSchoolSet space",
             "Hero magicSchoolSet space",
@@ -1591,7 +1591,7 @@ window.OE_SKILLS_DATA = {
     {
       "id": "skill_magic_primal",
       "name": "Primal Magic",
-      "baseDesc": "The hero can learn tier‑{0} Primal spells.",
+      "baseDesc": "The hero can learn Primal spells up to tier {0}.",
       "group": "school",
       "skillType": "Common",
       "factionId": null,
@@ -1600,7 +1600,7 @@ window.OE_SKILLS_DATA = {
           "level": 1,
           "icon": "skill_magic_primal",
           "name": "Basic Primal Magic",
-          "desc": "The hero can learn tier‑{0} Primal spells.",
+          "desc": "The hero can learn Primal spells up to tier {0}.",
           "bonuses": [
             "Hero magicSchoolSet primal",
             "Hero magicSchoolSet primal"
@@ -1611,7 +1611,7 @@ window.OE_SKILLS_DATA = {
           "level": 2,
           "icon": "skill_magic_primal_2",
           "name": "Advanced Primal Magic",
-          "desc": "The hero can learn tier‑{0} Primal spells. Primal spells gain +{1} level(s).",
+          "desc": "The hero can learn Primal spells up to tier {0}. Primal spells gain +{1} level(s).",
           "bonuses": [
             "Hero magicSchoolSet primal",
             "Hero magicSchoolSet primal",
@@ -1639,7 +1639,7 @@ window.OE_SKILLS_DATA = {
           "level": 3,
           "icon": "skill_magic_primal_3",
           "name": "Expert Primal Magic",
-          "desc": "The hero can learn tier‑{0} Primal spells, and can learn Primal spells unlocked in the Observatory, without visiting a Mage Guild. Primal spells gain +{1} level(s).",
+          "desc": "The hero can learn Primal spells up to tier {0}, without visiting a Mage Guild, provided they are unlocked in the Observatory. Primal spells gain +{1} level(s).",
           "bonuses": [
             "Hero magicSchoolSet primal",
             "Hero magicSchoolSet primal",
@@ -1751,7 +1751,7 @@ window.OE_SKILLS_DATA = {
     {
       "id": "skill_battlemage",
       "name": "Battle Magic",
-      "baseDesc": "Friendly creatures’ Attack and Defense increase by {0}% of the hero’s Spell Power and Knowledge respectively.",
+      "baseDesc": "Friendly creatures’ Attack and Defense increase by {0}% of the hero’s Spell Power and Knowledge, respectively, but decrease by {0}% of the hero’s Attack and Defense.",
       "group": "magic",
       "skillType": "Common",
       "factionId": null,
@@ -1760,10 +1760,12 @@ window.OE_SKILLS_DATA = {
           "level": 1,
           "icon": "skill_battlemage",
           "name": "Basic Battle Magic",
-          "desc": "Friendly creatures’ Attack and Defense increase by {0}% of the hero’s Spell Power and Knowledge respectively.",
+          "desc": "Friendly creatures’ Attack and Defense increase by {0}% of the hero’s Spell Power and Knowledge, respectively, but decrease by {0}% of the hero’s Attack and Defense.",
           "bonuses": [
-            "Unit heroSpellPowerModifier +0.15",
-            "Unit heroIntelligenceModifier +0.15"
+            "Unit heroSpellPowerModifier +0.20",
+            "Unit heroIntelligenceModifier +0.20",
+            "Unit heroOffenceModifier -0.20",
+            "Unit heroDefenceModifier -0.20"
           ],
           "subskills": []
         },
@@ -1771,26 +1773,28 @@ window.OE_SKILLS_DATA = {
           "level": 2,
           "icon": "skill_battlemage_2",
           "name": "Advanced Battle Magic",
-          "desc": "Friendly creatures’ Attack and Defense increase by {0}% of the hero’s Spell Power and Knowledge respectively.",
+          "desc": "Friendly creatures’ Attack and Defense increase by {0}% of the hero’s Spell Power and Knowledge, respectively, but decrease by {0}% of the hero’s Attack and Defense.",
           "bonuses": [
-            "Unit heroSpellPowerModifier +0.25",
-            "Unit heroIntelligenceModifier +0.25"
+            "Unit heroSpellPowerModifier +0.30",
+            "Unit heroIntelligenceModifier +0.30",
+            "Unit heroOffenceModifier -0.30",
+            "Unit heroDefenceModifier -0.30"
           ],
           "subskills": [
             {
               "id": "sub_skill_battlemage_1",
-              "name": "Aura of Destruction",
-              "desc": "Every time the hero uses a spell in a battle, their Attack increases by {0} until the end of that battle."
+              "name": "Piercing Spells",
+              "desc": "Offensive spells ignore {0}% of target’s magic resistance."
             },
             {
               "id": "sub_skill_battlemage_2",
-              "name": "Aura of Protection",
-              "desc": "Every time the hero uses a spell in a battle, their Defense increases by {0} until the end of that battle."
+              "name": "Mana Return",
+              "desc": "Every time the hero uses a spell in a battle, they gain {0} temporary mana."
             },
             {
-              "id": "sub_skill_battlemage_3",
-              "name": "Aura of Wizardry",
-              "desc": "Every time the hero uses a spell in a battle, their Spell Power increases by {0} until the end of that battle."
+              "id": "sub_skill_battlemage_6",
+              "name": "Magic Time",
+              "desc": "The cooldowns of all the hero’s battle spells are reduced by {0} round(s)."
             }
           ]
         },
@@ -1798,10 +1802,12 @@ window.OE_SKILLS_DATA = {
           "level": 3,
           "icon": "skill_battlemage_3",
           "name": "Expert Battle Magic",
-          "desc": "Friendly creatures’ Attack and Defense increase by {0}% of the hero’s Spell Power and Knowledge respectively.",
+          "desc": "Friendly creatures’ Attack and Defense increase by {0}% of the hero’s Spell Power and Knowledge, respectively, but decrease by {0}% of the hero’s Attack and Defense.",
           "bonuses": [
-            "Unit heroSpellPowerModifier +0.35",
-            "Unit heroIntelligenceModifier +0.35"
+            "Unit heroSpellPowerModifier +0.40",
+            "Unit heroIntelligenceModifier +0.40",
+            "Unit heroOffenceModifier -0.40",
+            "Unit heroDefenceModifier -0.40"
           ],
           "subskills": [
             {
@@ -1815,9 +1821,9 @@ window.OE_SKILLS_DATA = {
               "desc": "Friendly creatures’ Defense increases by {0}% of the hero’s Knowledge. This bonus is doubled if the hero knows “Resistance.”"
             },
             {
-              "id": "sub_skill_battlemage_6",
-              "name": "Magic Time",
-              "desc": "The cooldowns of all the hero’s battle spells are reduced by {0} round(s)."
+              "id": "sub_skill_battlemage_3",
+              "name": "Aura of Wizardry",
+              "desc": "Every time the hero casts a spell in battle, they gain {0} Spell Power and Knowledge until the end of the battle."
             }
           ]
         }
@@ -1921,17 +1927,17 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_resistance_1",
               "name": "Obstruction",
-              "desc": "Enemy spells cost {0}% more mana. If the hero knows a Magic School skill, the cost of enemy spells from that School increases by an additional {0}%."
+              "desc": "Enemy spells cost {0}% more mana. If the hero knows a Magic School skill, the cost of enemy spells from that School increases by an additional {0}%."
             },
             {
               "id": "sub_skill_resistance_4",
-              "name": "Hindrance Aura",
-              "desc": "Enemy loses {0} Focus Charge(s) at the beginning of each battle round."
+              "name": "Protective Sorcery",
+              "desc": "Reduces Damage taken by friendly creatures from Heroic Strike by {0}%. This bonus is doubled if the hero knows “First Aid.”"
             },
             {
-              "id": "sub_skill_resistance_3",
-              "name": "Fast Metabolism",
-              "desc": "All negative effects on friendly creatures last for {0} fewer rounds (no less than {1})."
+              "id": "sub_skill_resistance_7",
+              "name": "Time Shift",
+              "desc": "+{0} round(s) to the cooldown of all enemy spells."
             }
           ]
         },
@@ -1947,17 +1953,17 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_resistance_5",
               "name": "Magic Suppression",
-              "desc": "Grants a new ability. It deals significant Magic Damage to the target summoned creature, scaling with the hero’s level."
+              "desc": "Grants a new ability. It deals significant Magic Damage to the target summoned creature, scaling with the hero’s level."
             },
             {
-              "id": "sub_skill_resistance_7",
-              "name": "Time Shift",
-              "desc": "+{0} round(s) to the cooldown of all enemy spells."
+              "id": "sub_skill_resistance_3",
+              "name": "Fast Metabolism",
+              "desc": "All negative effects on friendly creatures last for {0} fewer rounds (no less than {1})."
             },
             {
               "id": "sub_skill_resistance_6",
               "name": "Draining",
-              "desc": "The enemy loses {0} levels on all Magic School spells."
+              "desc": "The enemy loses {0} levels on all Magic School spells."
             }
           ]
         }
@@ -2043,7 +2049,7 @@ window.OE_SKILLS_DATA = {
           "level": 1,
           "icon": "skill_diplomacy",
           "name": "Basic Diplomacy",
-          "desc": "Provides a chance of neutral squads offering to join the hero’s army for Gold instead of fighting them.",
+          "desc": "Provides a chance of neutral squads offering to join the hero’s army for Gold instead of fighting them.",
           "bonuses": [
             "Hero enableDiplomacy true",
             "Hero diplomacyEfficiencyPerBonus +0"
@@ -2054,7 +2060,7 @@ window.OE_SKILLS_DATA = {
           "level": 2,
           "icon": "skill_diplomacy_2",
           "name": "Advanced Diplomacy",
-          "desc": "Provides a chance of neutral squads offering to join the hero’s army for Gold instead of fighting them. +{0}% Persuasion Power in Diplomacy.",
+          "desc": "Provides a chance of neutral squads offering to join the hero’s army for Gold instead of fighting them. +{0}% Persuasion Power in Diplomacy.",
           "bonuses": [
             "Hero enableDiplomacy true",
             "Hero diplomacyEfficiencyPerBonus +0.25"
@@ -2081,7 +2087,7 @@ window.OE_SKILLS_DATA = {
           "level": 3,
           "icon": "skill_diplomacy_3",
           "name": "Expert Diplomacy",
-          "desc": "Provides a chance of neutral squads offering to join the hero’s army for Gold instead of fighting them. +{0}% Persuasion Power in Diplomacy.",
+          "desc": "Provides a chance of neutral squads offering to join the hero’s army for Gold instead of fighting them. +{0}% Persuasion Power in Diplomacy.",
           "bonuses": [
             "Hero enableDiplomacy true",
             "Hero diplomacyEfficiencyPerBonus +0.50"
@@ -2177,7 +2183,7 @@ window.OE_SKILLS_DATA = {
     {
       "id": "skill_mastery",
       "name": "Wisdom",
-      "baseDesc": "The hero can learn up to tier‑{0} spells without knowing the corresponding Magic School skill.",
+      "baseDesc": "The hero can learn up to tier‑{0} spells without knowing the corresponding Magic School skill.",
       "group": "magic",
       "skillType": "Common",
       "factionId": null,
@@ -2186,7 +2192,7 @@ window.OE_SKILLS_DATA = {
           "level": 1,
           "icon": "skill_mastery",
           "name": "Basic Wisdom",
-          "desc": "The hero can learn up to tier‑{0} spells without knowing the corresponding Magic School skill.",
+          "desc": "The hero can learn up to tier‑{0} spells without knowing the corresponding Magic School skill.",
           "bonuses": [
             "Hero magicSchoolSet day",
             "Hero magicSchoolSet night",
@@ -2199,7 +2205,7 @@ window.OE_SKILLS_DATA = {
           "level": 2,
           "icon": "skill_mastery_2",
           "name": "Advanced Wisdom",
-          "desc": "The hero can learn up to tier‑{0} spells without knowing the corresponding Magic School skill.",
+          "desc": "The hero can learn up to tier‑{0} spells without knowing the corresponding Magic School skill.",
           "bonuses": [
             "Hero magicSchoolSet day",
             "Hero magicSchoolSet night",
@@ -2210,12 +2216,12 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_mastery_5",
               "name": "Rite of Magic",
-              "desc": "Grants a new global map spell. It allows the hero to convert all of their current Movement points into mana."
+              "desc": "Grants a new global map spell. It allows the hero to convert all of their current Movement points into mana."
             },
             {
               "id": "sub_skill_mastery_2",
               "name": "Between the Lines",
-              "desc": "The hero may learn high Neutral magic, regardless of their level."
+              "desc": "The hero may learn High Neutral magic, regardless of their level."
             },
             {
               "id": "sub_skill_mastery_7",
@@ -2228,7 +2234,7 @@ window.OE_SKILLS_DATA = {
           "level": 3,
           "icon": "skill_mastery_3",
           "name": "Expert Wisdom",
-          "desc": "The hero can learn up to tier‑{0} spells without knowing the corresponding Magic School skill.",
+          "desc": "The hero can learn up to tier‑{0} spells without knowing the corresponding Magic School skill.",
           "bonuses": [
             "Hero magicSchoolSet day",
             "Hero magicSchoolSet night",
@@ -2249,7 +2255,7 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_mastery_6",
               "name": "Stargazer",
-              "desc": "+{0} Astrology Points per day. This bonus is doubled if the hero knows “Scouting.”"
+              "desc": "+{0} Astrology Points per day. This bonus is doubled if the hero knows “Scouting.”"
             }
           ]
         }
@@ -2333,7 +2339,7 @@ window.OE_SKILLS_DATA = {
     {
       "id": "skill_scouting",
       "name": "Scouting",
-      "baseDesc": "The hero gains {0} sight radius.",
+      "baseDesc": "The hero gains {0} sight radius.",
       "group": "utility",
       "skillType": "Common",
       "factionId": null,
@@ -2342,7 +2348,7 @@ window.OE_SKILLS_DATA = {
           "level": 1,
           "icon": "skill_scouting",
           "name": "Basic Scouting",
-          "desc": "The hero gains {0} sight radius.",
+          "desc": "The hero gains {0} sight radius.",
           "bonuses": [
             "Hero viewRadius +1"
           ],
@@ -2352,7 +2358,7 @@ window.OE_SKILLS_DATA = {
           "level": 2,
           "icon": "skill_scouting_2",
           "name": "Advanced Scouting",
-          "desc": "The hero gains {0} sight radius.",
+          "desc": "The hero gains {0} sight radius.",
           "bonuses": [
             "Hero viewRadius +2"
           ],
@@ -2363,9 +2369,9 @@ window.OE_SKILLS_DATA = {
               "desc": "Sight radius increases by an additional {0}. This bonus is doubled if the hero knows “Luck.”"
             },
             {
-              "id": "sub_skill_scouting_2",
-              "name": "Familiar Paths",
-              "desc": "+{0} Movement points when the hero starts the day in an area you control. This bonus is doubled if the hero knows “Wisdom.”"
+              "id": "sub_skill_scouting_6",
+              "name": "Counterespionage",
+              "desc": "Enemies can’t see detailed information about your army. When they try, they see random numbers of random creatures of your faction."
             },
             {
               "id": "sub_skill_scouting_3",
@@ -2378,7 +2384,7 @@ window.OE_SKILLS_DATA = {
           "level": 3,
           "icon": "skill_scouting_3",
           "name": "Expert Scouting",
-          "desc": "The hero gains {0} sight radius.",
+          "desc": "The hero gains {0} sight radius.",
           "bonuses": [
             "Hero viewRadius +3"
           ],
@@ -2386,17 +2392,17 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_scouting_5",
               "name": "Reconnaissance",
-              "desc": "Removes the fog of war within {0} square(s) of the hero each morning."
+              "desc": "Removes the fog of war within {0} square(s) of the hero each morning."
             },
             {
               "id": "sub_skill_scouting_4",
               "name": "Visions",
-              "desc": "Shows the exact army composition of any enemy within {0} square(s) of the hero."
+              "desc": "Shows the exact army composition of any enemy within {0} square(s) of the hero."
             },
             {
-              "id": "sub_skill_scouting_6",
-              "name": "Counterespionage",
-              "desc": "Enemies can’t see detailed information about your army. When they try, they see random numbers of random creatures of your faction."
+              "id": "sub_skill_scouting_2",
+              "name": "Leaps and Bounds",
+              "desc": "The hero restores {0} Movement point(s) after each victory in battle."
             }
           ]
         }
@@ -2480,7 +2486,7 @@ window.OE_SKILLS_DATA = {
     {
       "id": "skill_formation",
       "name": "Battlecraft",
-      "baseDesc": "When a friendly creature waits on their turn, they gain +{0}% Attack until the end of the round. When they skip turn, they gain +{0}% Defense until the end of the round.",
+      "baseDesc": "When a friendly creature waits on their turn, they gain +{0}% Attack until the end of the round. When they skip turn, they gain +{0}% Defense until the end of the round.",
       "group": "combat",
       "skillType": "Common",
       "factionId": null,
@@ -2489,7 +2495,7 @@ window.OE_SKILLS_DATA = {
           "level": 1,
           "icon": "skill_formation",
           "name": "Basic Battlecraft",
-          "desc": "When a friendly creature waits on their turn, they gain +{0}% Attack until the end of the round. When they skip turn, they gain +{0}% Defense until the end of the round.",
+          "desc": "When a friendly creature waits on their turn, they gain +{0}% Attack until the end of the round. When they skip turn, they gain +{0}% Defense until the end of the round.",
           "bonuses": [
             "battle: unit_buff skill_formation_1_bonus"
           ],
@@ -2499,25 +2505,25 @@ window.OE_SKILLS_DATA = {
           "level": 2,
           "icon": "skill_formation_2",
           "name": "Advanced Battlecraft",
-          "desc": "When a friendly creature waits on their turn, they gain +{0}% Attack until the end of the round. When they skip turn, they gain +{0}% Defense until the end of the round.",
+          "desc": "When a friendly creature waits on their turn, they gain +{0}% Attack until the end of the round. When they skip turn, they gain +{0}% Defense until the end of the round.",
           "bonuses": [
             "battle: unit_buff skill_formation_2_bonus"
           ],
           "subskills": [
             {
-              "id": "sub_skill_formation_1",
-              "name": "Melee Mastery",
-              "desc": "Friendly creatures deal +{0}% and take –{0}% Melee Damage."
+              "id": "sub_skill_formation_6",
+              "name": "Manacraft",
+              "desc": "The hero’s maximum mana increases by {0} per their Attack and Defense. This bonus is doubled if the hero knows “Recruitment.”"
             },
             {
               "id": "sub_skill_formation_2",
-              "name": "Ranged Mastery",
-              "desc": "Friendly creatures deal +{0}% and take –{0}% Ranged and Long Reach Damage."
+              "name": "Fortifying",
+              "desc": "When a friendly stack skips their turn, they gain +{0} Defense until the end of the round."
             },
             {
               "id": "sub_skill_formation_3",
               "name": "Overwatch",
-              "desc": "Friendly creatures gain overwatch when they choose to wait in battle. While overwatching, they will counterattack when an enemy moves into their Melee Range."
+              "desc": "Friendly creatures gain Overwatch when they wait in battle. While overwatching, they will hit an enemy walking or flying away from a hex in their Melee Range."
             }
           ]
         },
@@ -2525,7 +2531,7 @@ window.OE_SKILLS_DATA = {
           "level": 3,
           "icon": "skill_formation_3",
           "name": "Expert Battlecraft",
-          "desc": "When a friendly creature waits on their turn, they gain +{0}% Attack until the end of the round. When they skip turn, they gain +{0}% Defense until the end of the round.",
+          "desc": "When a friendly creature waits on their turn, they gain +{0}% Attack until the end of the round. When they skip turn, they gain +{0}% Defense until the end of the round.",
           "bonuses": [
             "battle: unit_buff skill_formation_3_bonus"
           ],
@@ -2533,17 +2539,17 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_formation_4",
               "name": "Battle Focus",
-              "desc": "Generates +{0} Focus Charge(s) at the beginning of each round. This bonus is doubled if the hero knows “Battle Magic.”"
+              "desc": "Generates +{0} Focus Charge(s) at the beginning of each round, <b>except the first</b>. This bonus is doubled if the hero knows “Battle Magic.”"
             },
             {
               "id": "sub_skill_formation_5",
               "name": "Preemptive Strike",
-              "desc": "Friendly creatures prepare for a preemptive strike when they choose to skip their turn. If they are attacked, their counterattack will land before the enemy’s first blow."
+              "desc": "Friendly creatures prepare for a preemptive strike when they choose to skip their turn. If they are attacked, their counterattack will land before the enemy’s first blow."
             },
             {
-              "id": "sub_skill_formation_6",
-              "name": "Manacraft",
-              "desc": "The hero’s maximum mana increases by {0} per their Attack and Defense. This bonus is doubled if the hero knows “Recruitment.”"
+              "id": "sub_skill_formation_1",
+              "name": "At the ready",
+              "desc": "When a friendly stack waits on their turn, they gain +{0} Speed until the end of the round."
             }
           ]
         }
@@ -2627,7 +2633,7 @@ window.OE_SKILLS_DATA = {
     {
       "id": "skill_tactics",
       "name": "Tactics",
-      "baseDesc": "In the Tactics Phase, creatures can be placed within a {0}‑line area.",
+      "baseDesc": "In the Tactics Phase, creatures can be placed within a {0}‑line area. If the enemy also knows “Tactics”, their area of placement reduces by {1} line(s).",
       "group": "utility",
       "skillType": "Common",
       "factionId": null,
@@ -2636,7 +2642,7 @@ window.OE_SKILLS_DATA = {
           "level": 1,
           "icon": "skill_tactics",
           "name": "Basic Tactics",
-          "desc": "In the Tactics Phase, creatures can be placed within a {0}‑line area.",
+          "desc": "In the Tactics Phase, creatures can be placed within a {0}‑line area. If the enemy also knows “Tactics”, their area of placement reduces by {1} line(s).",
           "bonuses": [
             "Hero enableTactics true",
             "Hero tacticsPlacementSize +1",
@@ -2648,7 +2654,7 @@ window.OE_SKILLS_DATA = {
           "level": 2,
           "icon": "skill_tactics_2",
           "name": "Advanced Tactics",
-          "desc": "In the Tactics Phase, creatures can be placed within a {0}‑line area.",
+          "desc": "In the Tactics Phase, creatures can be placed within a {0}‑line area. If the enemy also knows “Tactics”, their area of placement reduces by {1} line(s).",
           "bonuses": [
             "Hero enableTactics true",
             "Hero tacticsPlacementSize +2",
@@ -2658,17 +2664,17 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_tactics_1",
               "name": "One for All",
-              "desc": "Friendly creatures gain +{0} Attack for each adjacent enemy. This bonus is doubled if the hero knows “Offense.”"
+              "desc": "Friendly creatures gain +{0} Attack for each adjacent enemy. This bonus is doubled if the hero knows “Offense.”"
             },
             {
               "id": "sub_skill_tactics_2",
               "name": "Easy Prey",
-              "desc": "Once per round, when an enemy waits, friendly creatures gain +{0} Initiative until the end of round. This effect <b>does not</b> stack."
+              "desc": "Once per round, when an enemy waits, friendly creatures gain +{0} Initiative until the end of round. This effect <b>does not</b> stack."
             },
             {
               "id": "sub_skill_tactics_3",
               "name": "Energizing Mana",
-              "desc": "Generate +{0} Focus Charge each time your enemy uses a spell."
+              "desc": "Generate +{0} Focus Charge each time your enemy uses a spell."
             }
           ]
         },
@@ -2676,7 +2682,7 @@ window.OE_SKILLS_DATA = {
           "level": 3,
           "icon": "skill_tactics_3",
           "name": "Expert Tactics",
-          "desc": "In the Tactics Phase, creatures can be placed within a {0}‑line area.",
+          "desc": "In the Tactics Phase, creatures can be placed within a {0}‑line area. If the enemy also knows “Tactics”, their area of placement reduces by {1} line(s).",
           "bonuses": [
             "Hero enableTactics true",
             "Hero tacticsPlacementSize +3",
@@ -2686,12 +2692,12 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_tactics_4",
               "name": "All for One",
-              "desc": "Friendly creatures gain +{0} Defense for each adjacent ally. This bonus is doubled if the hero knows “Defense.”"
+              "desc": "Friendly creatures gain +{0} Defense for each adjacent ally. This bonus is doubled if the hero knows “Defense.”"
             },
             {
               "id": "sub_skill_tactics_5",
               "name": "Riposte Mastery",
-              "desc": "Whenever a friendly creature kills an enemy with a counterattack, their counterattacks are refreshed for the round."
+              "desc": "Whenever a friendly creature kills an enemy with a counterattack, their counterattacks are refreshed for the round."
             },
             {
               "id": "sub_skill_tactics_6",
@@ -2777,6 +2783,80 @@ window.OE_SKILLS_DATA = {
       ]
     },
     {
+      "id": "skill_first_aid",
+      "name": "First Aid",
+      "baseDesc": "After winning a battle, surviving friendly stacks revive {0}% of the units lost during that battle.",
+      "group": "other",
+      "skillType": "Common",
+      "factionId": null,
+      "levels": [
+        {
+          "level": 1,
+          "icon": "skill_first_aid",
+          "name": "Basic First Aid",
+          "desc": "After winning a battle, surviving friendly stacks revive {0}% of the units lost during that battle.",
+          "bonuses": [
+            "Hero restoreBattleLossesBonusPercent +0.20"
+          ],
+          "subskills": []
+        },
+        {
+          "level": 2,
+          "icon": "skill_first_aid_2",
+          "name": "Advanced First Aid",
+          "desc": "After winning a battle, surviving friendly stacks revive {0}% of the units lost during that battle.",
+          "bonuses": [
+            "Hero restoreBattleLossesBonusPercent +0.30"
+          ],
+          "subskills": [
+            {
+              "id": "sub_skill_first_aid_1",
+              "name": "Return to Service",
+              "desc": "Revives an additional +{0}% of units lost during the battle. This bonus is doubled if the hero knows “Recruitment.”"
+            },
+            {
+              "id": "sub_skill_first_aid_5",
+              "name": "Healthy Decoctions",
+              "desc": "Friendly creatures gain +{0} HP."
+            },
+            {
+              "id": "sub_skill_first_aid_3",
+              "name": "Antidotes",
+              "desc": "Grants a new ability. It dispels all negative effects from the target."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "icon": "skill_first_aid_3",
+          "name": "Expert First Aid",
+          "desc": "After winning a battle, surviving friendly stacks revive {0}% of the units lost during that battle.",
+          "bonuses": [
+            "Hero restoreBattleLossesBonusPercent +0.40"
+          ],
+          "subskills": [
+            {
+              "id": "sub_skill_first_aid_4",
+              "name": "Thrill of Battle",
+              "desc": "Whenever a friendly creature kills an enemy, it fully restores its HP. This <b>cannot</b> revive fallen units."
+            },
+            {
+              "id": "sub_skill_first_aid_2",
+              "name": "Adrenaline",
+              "desc": "Whenever a friendly stack takes Damage and survives, it gains +{0}% to Damage dealt and –{0}% to Damage taken until the end of the next round."
+            },
+            {
+              "id": "sub_skill_first_aid_6",
+              "name": "Ammonia",
+              "desc": "Grants a new ability. It revives a target friendly corpse, partially restoring its HP. Usable once per battle."
+            }
+          ]
+        }
+      ],
+      "subclasses": [],
+      "starters": []
+    },
+    {
       "id": "skill_summoner",
       "name": "Summon Avatar",
       "baseDesc": "",
@@ -2788,11 +2868,12 @@ window.OE_SKILLS_DATA = {
           "level": 1,
           "icon": "skill_summoner",
           "name": "Basic Summon Avatar",
-          "desc": "Grants a new battle spell. It summons an Avatar that scales with the hero’s Spell Power and Knowledge.",
+          "desc": "Grants a new battle spell. It summons an Avatar that is destroyed upon taking <b>three</b> hits from any source. While it <b>does not</b> gain any bonuses from the hero’s Attack and Defense, it gains +{0} Attack and deals +{1} Damage for each point of the hero’s Spell Power.",
           "bonuses": [
             "heroMagicAddition: bonus_magic_astral_summon_1 false",
             "Unit heroSpellPowerModifier +1",
-            "Unit heroIntelligenceModifier +1"
+            "Unit heroOffenceModifier -1",
+            "Unit heroDefenceModifier -1"
           ],
           "subskills": []
         },
@@ -2800,22 +2881,23 @@ window.OE_SKILLS_DATA = {
           "level": 2,
           "icon": "skill_summoner_2",
           "name": "Advanced Summon Avatar",
-          "desc": "Grants a new battle spell. It summons an Avatar that scales more strongly with the hero’s Spell Power and Knowledge.",
+          "desc": "Grants a new battle spell. It summons an Avatar that is destroyed upon taking <b>three</b> hits from any source. While it <b>does not</b> gain any bonuses from the hero’s Attack and Defense, it gains +{0} Attack and deals +{1} Damage for each point of the hero’s Spell Power.",
           "bonuses": [
             "heroMagicAddition: bonus_magic_astral_summon_2 false",
             "Unit heroSpellPowerModifier +1",
-            "Unit heroIntelligenceModifier +1"
+            "Unit heroOffenceModifier -1",
+            "Unit heroDefenceModifier -1"
           ],
           "subskills": [
             {
               "id": "sub_skill_summoner_1",
               "name": "Avatar of Fury",
-              "desc": "Avatar’s Attack increases by {0}% of the hero’s Spell Power. This bonus is doubled if the hero knows “Leadership.”"
+              "desc": "Avatar deals +{0}% Damage. This bonus is doubled if the hero knows “Leadership.”"
             },
             {
               "id": "sub_skill_summoner_2",
               "name": "Avatar of Toughness",
-              "desc": "Avatar’s Defense increases by {0}% of the hero’s Knowledge. This bonus is doubled if the hero knows “Defense.”"
+              "desc": "Avatar can withstand one extra hit. This bonus is doubled if the hero knows “Defense.”"
             },
             {
               "id": "sub_skill_summoner_3",
@@ -2828,11 +2910,12 @@ window.OE_SKILLS_DATA = {
           "level": 3,
           "icon": "skill_summoner_3",
           "name": "Expert Summon Avatar",
-          "desc": "Grants a new battle spell. It summons an Avatar that scales even more strongly with the hero’s Spell Power and Knowledge.",
+          "desc": "Grants a new battle spell. It summons an Avatar that is destroyed upon taking <b>three</b> hits from any source. While it <b>does not</b> gain any bonuses from the hero’s Attack and Defense, it gains +{0} Attack and deals +{1} Damage for each point of the hero’s Spell Power.",
           "bonuses": [
             "heroMagicAddition: bonus_magic_astral_summon_3 false",
             "Unit heroSpellPowerModifier +1",
-            "Unit heroIntelligenceModifier +1"
+            "Unit heroOffenceModifier -1",
+            "Unit heroDefenceModifier -1"
           ],
           "subskills": [
             {
@@ -2843,12 +2926,12 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_summoner_5",
               "name": "Their Name is Legion",
-              "desc": "Friendly creatures’ abilities summon +{0}% creatures."
+              "desc": "The hero and friendly creatures summon +{0}% units."
             },
             {
-              "id": "sub_skill_summoner_6",
-              "name": "Fields of Mana",
-              "desc": "Using spells, the hero can summon creatures onto any free hex."
+              "id": "sub_skill_summoner_7",
+              "name": "Parasitic Summon",
+              "desc": "Whenever summoned Avatar deals or takes Damage, the hero gains {0} temporary mana."
             }
           ]
         }
@@ -2927,14 +3010,14 @@ window.OE_SKILLS_DATA = {
       "name": "Recruitment",
       "baseDesc": "",
       "group": "never",
-      "skillType": "Class",
+      "skillType": "Common",
       "factionId": null,
       "levels": [
         {
           "level": 1,
           "icon": "skill_trainer",
           "name": "Basic Recruitment",
-          "desc": "+{0} to tier‑1 creature growth in all your cities.",
+          "desc": "+{0} to tier‑1 creature growth in all your cities.",
           "bonuses": [
             "cityUnitsIncrement: 1 4"
           ],
@@ -2944,7 +3027,7 @@ window.OE_SKILLS_DATA = {
           "level": 2,
           "icon": "skill_trainer_2",
           "name": "Advanced Recruitment",
-          "desc": "+{0} to tier‑1 and +{1} to tier‑2 creature growth in all your cities.",
+          "desc": "+{0} to tier‑1 and +{1} to tier‑2 creature growth in all your cities.",
           "bonuses": [
             "cityUnitsIncrement: 1 4",
             "cityUnitsIncrement: 2 3"
@@ -2953,12 +3036,12 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_trainer_1",
               "name": "Direct Supervision",
-              "desc": "If the hero is in a city at the start of a week, growth of all creatures in that city increases by an additional {0}% growth."
+              "desc": "If the hero is in a city at the start of a week, growth of all creatures in that city increases by an additional {0}% growth."
             },
             {
-              "id": "sub_skill_trainer_5",
-              "name": "Elite Guards",
-              "desc": "Tier‑1, tier‑2 and tier‑3 friendly creatures gain {0}% of the hero’s Attack and Defense as Attack and Defense. This bonus is doubled if the hero knows “Tactics.”"
+              "id": "sub_skill_trainer_2",
+              "name": "Strenuous Training",
+              "desc": "The cooldowns of all friendly creature abilities are reduced by {0} round(s)."
             },
             {
               "id": "sub_skill_trainer_3",
@@ -2971,7 +3054,7 @@ window.OE_SKILLS_DATA = {
           "level": 3,
           "icon": "skill_trainer_3",
           "name": "Expert Recruitment",
-          "desc": "+{0} to tier‑1, +{1} to tier‑2, and +{2} to tier‑3 creature growth in all your cities.",
+          "desc": "+{0} to tier‑1, +{1} to tier‑2, and +{2} to tier‑3 creature growth in all your cities.",
           "bonuses": [
             "cityUnitsIncrement: 1 4",
             "cityUnitsIncrement: 2 3",
@@ -2981,17 +3064,17 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_trainer_4",
               "name": "Relocation",
-              "desc": "Grants a new global map spell. It allows interaction with any controlled city, enabling the transfer of creatures to or from that city. Usable once per day."
+              "desc": "Grants a new global map spell. It allows interaction with any controlled city, enabling the transfer of creatures to or from that city. Usable once per day."
             },
             {
-              "id": "sub_skill_trainer_2",
-              "name": "Strenuous Training",
-              "desc": "Friendly creatures gain {0} HP."
+              "id": "sub_skill_trainer_5",
+              "name": "Militia",
+              "desc": "At the start of battle, tier‑1, tier‑2, and tier‑3 friendly stacks gain {0}% temporary units. This bonus is doubled if the hero knows “Tactics.”"
             },
             {
               "id": "sub_skill_trainer_6",
-              "name": "Mentors",
-              "desc": "Allows creatures in the hero’s army to be upgraded outside the city, provided the army already contains the upgraded version. Upgrading this way costs more than normal."
+              "name": "Elite Guards",
+              "desc": "Allows switching creature upgrades in the hero’s army even outside of cities or special objects."
             }
           ]
         }
@@ -3033,7 +3116,7 @@ window.OE_SKILLS_DATA = {
           "level": 1,
           "icon": "skill_siege",
           "name": "Basic Siegecraft",
-          "desc": "The catapult deals +{0} Damage.",
+          "desc": "The catapult deals +{0} Damage.",
           "bonuses": [
             "battle: hero_ability skill_siege_attack_siege_ability_bonus_1"
           ],
@@ -3043,7 +3126,7 @@ window.OE_SKILLS_DATA = {
           "level": 2,
           "icon": "skill_siege_2",
           "name": "Advanced Siegecraft",
-          "desc": "The catapult deals +{0} Damage.",
+          "desc": "The catapult deals +{0} Damage.",
           "bonuses": [
             "battle: hero_ability skill_siege_attack_siege_ability_bonus_2"
           ],
@@ -3051,17 +3134,17 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_siege_1",
               "name": "Relentless Assault",
-              "desc": "While besieging a city, friendly creatures gain +{0} Speed and Initiative."
+              "desc": "While besieging a city, friendly creatures gain +{0} Speed and Initiative."
             },
             {
               "id": "sub_skill_siege_2",
               "name": "Forward Observers",
-              "desc": "Ranged Damage of friendly creatures is not reduced by walls during a siege."
+              "desc": "Ranged Damage of friendly creatures is not reduced by walls during a siege."
             },
             {
               "id": "sub_skill_siege_3",
               "name": "Barrage",
-              "desc": "Grants a new siege ability. It attacks a chosen hex and all adjacent hexes. Usable once per round."
+              "desc": "Grants a new siege ability. It attacks a chosen hex and all adjacent hexes. Usable once per round."
             }
           ]
         },
@@ -3069,7 +3152,7 @@ window.OE_SKILLS_DATA = {
           "level": 3,
           "icon": "skill_siege_3",
           "name": "Expert Siegecraft",
-          "desc": "The catapult deals +{0} Damage.",
+          "desc": "The catapult deals +{0} Damage.",
           "bonuses": [
             "battle: hero_ability skill_siege_attack_siege_ability_bonus_3"
           ],
@@ -3077,17 +3160,17 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_siege_4",
               "name": "Phalanx",
-              "desc": "While besieging a city, friendly creatures take –{0}% Damage from the defender’s towers."
+              "desc": "While besieging a city, friendly creatures take –{0}% Damage from the defender’s towers."
             },
             {
               "id": "sub_skill_siege_5",
               "name": "Tunnelling",
-              "desc": "Grants a new siege ability. It teleports a friendly creature to a chosen free hex up to {0} hexes away. Usable once per round."
+              "desc": "Grants a new siege ability. It teleports a friendly creature to a chosen free hex up to {0} hexes away. Usable once per round."
             },
             {
               "id": "sub_skill_siege_6",
               "name": "Sabotage",
-              "desc": "While the hero is besieging a city, the enemy gate is always open."
+              "desc": "While the hero is besieging a city, the enemy gate is always open."
             }
           ]
         }
@@ -3107,9 +3190,10 @@ window.OE_SKILLS_DATA = {
           "level": 1,
           "icon": "skill_battle_artistry",
           "name": "Basic Combat",
-          "desc": "Heroic Strike deals +{0} basic Damage.",
+          "desc": "Heroic Strike deals +{0} base Damage.",
           "bonuses": [
-            "battle: hero_ability skill_warrior_ability_skill_battle_artistry_1_base"
+            "battle: hero_ability skill_warrior_ability_skill_battle_artistry_1_base",
+            "battle: hero_ability skill_mage_ability_skill_battle_artistry_1_base"
           ],
           "subskills": []
         },
@@ -3117,15 +3201,16 @@ window.OE_SKILLS_DATA = {
           "level": 2,
           "icon": "skill_battle_artistry_2",
           "name": "Advanced Combat",
-          "desc": "Heroic Strike deals +{0} basic Damage.",
+          "desc": "Heroic Strike deals +{0} base Damage.",
           "bonuses": [
-            "battle: hero_ability skill_warrior_ability_skill_battle_artistry_2_base"
+            "battle: hero_ability skill_warrior_ability_skill_battle_artistry_2_base",
+            "battle: hero_ability skill_mage_ability_skill_battle_artistry_2_base"
           ],
           "subskills": [
             {
-              "id": "sub_skill_battle_artistry_1",
-              "name": "Effortless Strike",
-              "desc": "Heroic Strike costs {0} fewer Focus Charge(s)."
+              "id": "sub_skill_battle_artistry_3",
+              "name": "Swordcraft",
+              "desc": "+{0} Attack and Defense."
             },
             {
               "id": "sub_skill_battle_artistry_2",
@@ -3143,15 +3228,16 @@ window.OE_SKILLS_DATA = {
           "level": 3,
           "icon": "skill_battle_artistry_3",
           "name": "Expert Combat",
-          "desc": "Heroic Strike deals +{0} basic Damage.",
+          "desc": "Heroic Strike deals +{0} base Damage.",
           "bonuses": [
-            "battle: hero_ability skill_warrior_ability_skill_battle_artistry_3_base"
+            "battle: hero_ability skill_warrior_ability_skill_battle_artistry_3_base",
+            "battle: hero_ability skill_mage_ability_skill_battle_artistry_3_base"
           ],
           "subskills": [
             {
-              "id": "sub_skill_battle_artistry_3",
-              "name": "Swordcraft",
-              "desc": "+{0} Attack and Defense."
+              "id": "sub_skill_battle_artistry_1",
+              "name": "Effortless Strike",
+              "desc": "Heroic Strike costs {0} fewer Focus Charge(s)."
             },
             {
               "id": "sub_skill_battle_artistry_5",
@@ -3194,7 +3280,7 @@ window.OE_SKILLS_DATA = {
     {
       "id": "skill_wisdom",
       "name": "Thaumaturgy",
-      "baseDesc": "The hero can use the Spellbook one more time per battle round, but only to cast a spell of a Magic School that hasn’t been used this round. Spells cost +{0}% mana for each use after the first.",
+      "baseDesc": "The hero can use the Spellbook one more time per battle round, but only to cast a spell of a Magic School that hasn’t been used this round. Spells cost +{0}% mana for each use after the first.",
       "group": "magic-class",
       "skillType": "Class",
       "factionId": null,
@@ -3203,7 +3289,7 @@ window.OE_SKILLS_DATA = {
           "level": 1,
           "icon": "skill_wisdom",
           "name": "Basic Thaumaturgy",
-          "desc": "The hero can use the Spellbook one more time per battle round, but only to cast a spell of a Magic School that hasn’t been used this round. Spells cost +{0}% mana for each use after the first.",
+          "desc": "The hero can use the Spellbook one more time per battle round, but only to cast a spell of a Magic School that hasn’t been used this round. Spells cost +{0}% mana for each use after the first.",
           "bonuses": [
             "Hero magicOverloadsPerRound +1",
             "Hero magicOverloadPercent +1"
@@ -3214,7 +3300,7 @@ window.OE_SKILLS_DATA = {
           "level": 2,
           "icon": "skill_wisdom_2",
           "name": "Advanced Thaumaturgy",
-          "desc": "The hero can use the Spellbook one more time per battle round, but only to cast a spell of a Magic School that hasn’t been used this round. Spells cost +{0}% mana for each use after the first.",
+          "desc": "The hero can use the Spellbook one more time per battle round, but only to cast a spell of a Magic School that hasn’t been used this round. Spells cost +{0}% mana for each use after the first.",
           "bonuses": [
             "Hero magicOverloadsPerRound +1",
             "Hero magicOverloadPercent +0.75"
@@ -3222,18 +3308,18 @@ window.OE_SKILLS_DATA = {
           "subskills": [
             {
               "id": "sub_skill_wisdom_1",
-              "name": "Antimage",
-              "desc": "Enemy spells cost +{0} mana."
+              "name": "Vast Soul",
+              "desc": "The cooldowns of all the hero’s battle spells are reduced by {0} round(s)."
             },
             {
-              "id": "sub_skill_wisdom_5",
-              "name": "Ancient Scrolls",
-              "desc": "Adds all tier‑{0} spells to the hero’s Spellbook."
+              "id": "sub_skill_wisdom_6",
+              "name": "Thaumaturge Brilliance",
+              "desc": "+{0} Spell Power and Knowledge."
             },
             {
               "id": "sub_skill_wisdom_4",
               "name": "Practical Incantations",
-              "desc": "Heroic Strike deals +{0} Damage."
+              "desc": "Heroic Strike deals +{0} Damage."
             }
           ]
         },
@@ -3241,26 +3327,26 @@ window.OE_SKILLS_DATA = {
           "level": 3,
           "icon": "skill_wisdom_3",
           "name": "Expert Thaumaturgy",
-          "desc": "The hero can use the Spellbook one more time per battle round, but only to cast a spell of a Magic School that hasn’t been used this round. Spells cost +{0}% mana for each use after the first.",
+          "desc": "The hero can use the Spellbook one more time per battle round, but only to cast a spell of a Magic School that hasn’t been used this round. Spells cost +{0}% mana for each use after the first.",
           "bonuses": [
             "Hero magicOverloadsPerRound +1",
             "Hero magicOverloadPercent +0.50"
           ],
           "subskills": [
             {
-              "id": "sub_skill_wisdom_6",
-              "name": "Thaumaturge Brilliance",
-              "desc": "+{0} Spell Power and Knowledge."
+              "id": "sub_skill_wisdom_5",
+              "name": "Ancient Scrolls",
+              "desc": "Adds all tier‑{0} spells to the hero’s Spellbook."
             },
             {
               "id": "sub_skill_wisdom_2",
-              "name": "Vast Soul",
+              "name": "Fields of Mana",
               "desc": "+{0}% mana restored each morning."
             },
             {
               "id": "sub_skill_wisdom_3",
               "name": "Archmage",
-              "desc": "All the spells belonging to Magic Schools the hero has learned gain {0} level(s)."
+              "desc": "All the spells the hero has learned that belong to one of the Magic Schools gain {0} level(s)."
             }
           ]
         }
@@ -3300,7 +3386,7 @@ window.OE_SKILLS_DATA = {
     {
       "id": "skill_faction_humans",
       "name": "Righteousness",
-      "baseDesc": "<i>All who fall in battle do so in the hero’s name!</i> Whenever a friendly creature dies or kills an enemy, the hero’s Attack, Defense, Spell Power and Knowledge increase by {0} for one round. This effect is stackable.",
+      "baseDesc": "<i>All who fall in battle do so in the hero’s name!</i> Whenever a friendly creature dies or kills an enemy, the hero’s Attack, Defense, Spell Power and Knowledge increase by {0} for one round. This effect is stackable.",
       "group": "faction",
       "skillType": "Faction",
       "factionId": "temple",
@@ -3309,9 +3395,11 @@ window.OE_SKILLS_DATA = {
           "level": 1,
           "icon": "skill_faction_humans",
           "name": "Basic Righteousness",
-          "desc": "<i>All who fall in battle do so in the hero’s name!</i> Whenever a friendly creature dies or kills an enemy, the hero’s Attack, Defense, Spell Power and Knowledge increase by {0} for two rounds. This effect is stackable.",
+          "desc": "In battle, the hero can read a basic Prayer. Whenever a friendly stack starts its turn while a Prayer is active, it gains a grace that lasts until triggered. Only one Prayer can be active at a time.",
           "bonuses": [
-            "battle: unit_buff skill_faction_humans_new_1_bonus"
+            "hero ability: skill_faction_human_ability_sun_damage",
+            "hero ability: skill_faction_human_ability_sun_curing",
+            "hero ability: skill_faction_human_ability_sun_effect"
           ],
           "subskills": []
         },
@@ -3319,9 +3407,11 @@ window.OE_SKILLS_DATA = {
           "level": 2,
           "icon": "skill_faction_humans_2",
           "name": "Advanced Righteousness",
-          "desc": "<i>All who fall in battle do so in the hero’s name!</i> Whenever a friendly creature dies or kills an enemy, the hero’s Attack, Defense, Spell Power and Knowledge increase by {0} for three rounds. This effect is stackable.",
+          "desc": "In battle, the hero can read an advanced Prayer. Whenever a friendly stack starts its turn while a Prayer is active, it gains a grace that lasts until triggered. Only one Prayer can be active at a time.",
           "bonuses": [
-            "battle: unit_buff skill_faction_humans_new_2_bonus"
+            "hero ability: skill_faction_human_ability_sun_damage",
+            "hero ability: skill_faction_human_ability_sun_curing",
+            "hero ability: skill_faction_human_ability_sun_effect"
           ],
           "subskills": [
             {
@@ -3330,14 +3420,14 @@ window.OE_SKILLS_DATA = {
               "desc": "Friendly Temple creatures deal +{0}% and take –{0}% Damage on Native Terrain."
             },
             {
-              "id": "sub_skill_faction_humans_2",
-              "name": "Righteous Sacrifice",
-              "desc": "Whenever a friendly stack dies or kills an enemy stack, the hero gains {0} temporary mana."
+              "id": "sub_skill_faction_humans_rework_2",
+              "name": "Secret of Mana",
+              "desc": "After activating any Prayer, graced friendly creatures restore +{0} temporary mana to the hero at the start of their turn. The effect lasts until the end of round."
             },
             {
-              "id": "sub_skill_faction_humans_3",
-              "name": "Purging Touch",
-              "desc": "Grants a new ability. It dispels all negative effects from the target."
+              "id": "sub_skill_faction_humans_rework_3",
+              "name": "Piety",
+              "desc": "The hero gains +{0}% XP more."
             }
           ]
         },
@@ -3345,25 +3435,27 @@ window.OE_SKILLS_DATA = {
           "level": 3,
           "icon": "skill_faction_humans_3",
           "name": "Expert Righteousness",
-          "desc": "<i>All who fall in battle do so in the hero’s name!</i> Whenever a friendly creature dies or kills an enemy, the hero’s Attack, Defense, Spell Power and Knowledge increase by {0} for four rounds. This effect is stackable.",
+          "desc": "In battle, the hero can read an expert Prayer. Whenever a friendly stack starts its turn while a Prayer is active, it gains a grace that lasts until triggered. Only one Prayer can be active at a time.",
           "bonuses": [
-            "battle: unit_buff skill_faction_humans_new_3_bonus"
+            "hero ability: skill_faction_human_ability_sun_damage",
+            "hero ability: skill_faction_human_ability_sun_curing",
+            "hero ability: skill_faction_human_ability_sun_effect"
           ],
           "subskills": [
             {
-              "id": "sub_skill_faction_humans_2_old",
-              "name": "Guardian",
-              "desc": "Whenever a friendly creature kills an enemy, it fully restores its HP."
+              "id": "sub_skill_faction_humans_rework_4",
+              "name": "Requiem",
+              "desc": "Whenever any stack dies, the hero gains +{0} to all attributes until the end of the round."
             },
             {
-              "id": "sub_skill_faction_humans_5",
-              "name": "The Chosen One",
-              "desc": "Grants a new ability. It increases Attack of a friendly creature by {0}% of the hero’s Attack and Spell Power, and its Defense by {0}% of the hero’s Defense and Knowledge (until the end of the round)."
+              "id": "sub_skill_faction_humans_rework_5",
+              "name": "Care for Others",
+              "desc": "Whenever the hero activates any Prayer, the active friendly stack immediately gains its grace."
             },
             {
-              "id": "sub_skill_faction_humans_6",
-              "name": "Strong Faith",
-              "desc": "Whenever Righteousness is triggered, the hero gains +{0} to all attributes until the end of the round."
+              "id": "sub_skill_faction_humans_rework_6",
+              "name": "Contemplation",
+              "desc": "Activating Prayers does not spend Focus Charges."
             }
           ]
         }
@@ -3501,7 +3593,7 @@ window.OE_SKILLS_DATA = {
     {
       "id": "skill_faction_undead",
       "name": "Necromancy",
-      "baseDesc": "After winning a battle, transforms {0}% of the strongest enemy stack into friendly Undead of the same tier. This requires Necromantic Energy, which stores up to {1} and refills each week or when the hero has no stack of that tier in their army.",
+      "baseDesc": "After winning a battle, raises {0}% of the strongest enemy stack as friendly Undead of the same tier. This requires Necromantic Energy, which stores up to {1} and refills each week.",
       "group": "faction",
       "skillType": "Faction",
       "factionId": "necropolis",
@@ -3510,7 +3602,7 @@ window.OE_SKILLS_DATA = {
           "level": 1,
           "icon": "skill_faction_undead",
           "name": "Basic Necromancy",
-          "desc": "After winning a battle, transforms {0}% of the strongest enemy stack into friendly Undead of the same tier. This requires Necromantic Energy, which stores up to {1} and refills each week or when the hero has no stack of that tier in their army.",
+          "desc": "After winning a battle, raises {0}% of the strongest enemy stack as friendly Undead of the same tier. This requires Necromantic Energy, which stores up to {1} and refills each week.",
           "bonuses": [
             "Hero enableNecromancy true",
             "Hero necromancyPerBonus +0.10",
@@ -3524,13 +3616,13 @@ window.OE_SKILLS_DATA = {
           "level": 2,
           "icon": "skill_faction_undead_2",
           "name": "Advanced Necromancy",
-          "desc": "After winning a battle, transforms {0}% of the strongest enemy stack into friendly Undead of the same tier. This requires Necromantic Energy, which stores up to {1} and refills each week or when the hero has no stack of that tier in their army.",
+          "desc": "After winning a battle, raises {0}% of the strongest enemy stack as friendly Undead of the same tier. This requires Necromantic Energy, which stores up to {1} and refills each week.",
           "bonuses": [
             "Hero enableNecromancy true",
             "Hero necromancyPerBonus +0.15",
             "Hero energyEnablesSet undead",
             "Hero energyValuesSet undead",
-            "heroAddEnergy: undead 250",
+            "heroAddEnergy: undead 1000",
             "Hero enableRestoreNecromancyEnergy true"
           ],
           "subskills": [
@@ -3542,12 +3634,12 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_faction_undead_2",
               "name": "Soul Harvest",
-              "desc": "Restores {0} mana after a battle victory."
+              "desc": "Restores {0} mana after a battle victory."
             },
             {
               "id": "sub_skill_faction_undead_3",
               "name": "Death Herald",
-              "desc": "+{0} to the hero’s maximum Necromantic Energy."
+              "desc": "+{0} to the hero’s maximum Necromantic Energy."
             }
           ]
         },
@@ -3555,30 +3647,30 @@ window.OE_SKILLS_DATA = {
           "level": 3,
           "icon": "skill_faction_undead_3",
           "name": "Expert Necromancy",
-          "desc": "After winning a battle, transforms {0}% of the strongest enemy stack into friendly Undead of the same tier. This requires Necromantic Energy, which stores up to {1} and refills each week or when the hero has no stack of that tier in their army.",
+          "desc": "After winning a battle, raises {0}% of the strongest enemy stack as friendly Undead of the same tier. This requires Necromantic Energy, which stores up to {1} and refills each week.",
           "bonuses": [
             "Hero enableNecromancy true",
             "Hero necromancyPerBonus +0.20",
             "Hero energyEnablesSet undead",
             "Hero energyValuesSet undead",
-            "heroAddEnergy: undead 250",
+            "heroAddEnergy: undead 1000",
             "Hero enableRestoreNecromancyEnergy true"
           ],
           "subskills": [
             {
               "id": "sub_skill_faction_undead_4",
               "name": "Soul Reaper",
-              "desc": "–{0} to enemy Morale and Luck."
+              "desc": "–{0} to enemy Morale and Luck."
             },
             {
               "id": "sub_skill_faction_undead_5",
               "name": "Eternal Service",
-              "desc": "Grants a new ability. It restores HP to the target friendly Undead and can revive fallen units."
+              "desc": "Grants a new ability. It restores HP to the target friendly Undead and can revive fallen units."
             },
             {
               "id": "sub_skill_faction_undead_6",
               "name": "Fields of the Dead",
-              "desc": "+{0}% Necromantic Energy gained when the hero has no Undead of the required tier."
+              "desc": "+{0}% Necromantic Energy gained."
             }
           ]
         }
@@ -3716,7 +3808,7 @@ window.OE_SKILLS_DATA = {
     {
       "id": "skill_faction_nature",
       "name": "Murmuring",
-      "baseDesc": "Generates {0} Focus Charge(s) at the start of every battle.",
+      "baseDesc": "Generates {0} Focus Charge(s) at the start of every battle.",
       "group": "faction",
       "skillType": "Faction",
       "factionId": "grove",
@@ -3725,7 +3817,7 @@ window.OE_SKILLS_DATA = {
           "level": 1,
           "icon": "skill_faction_nature",
           "name": "Basic Murmuring",
-          "desc": "Generates {0} Focus Charge(s) at the start of every battle.",
+          "desc": "Generates {0} Focus Charge(s) at the start of every battle.",
           "bonuses": [
             "Hero startEnergyLevelsBonus +1"
           ],
@@ -3735,7 +3827,7 @@ window.OE_SKILLS_DATA = {
           "level": 2,
           "icon": "skill_faction_nature_2",
           "name": "Advanced Murmuring",
-          "desc": "Generates {0} Focus Charge(s) at the start of every battle.",
+          "desc": "Generates {0} Focus Charge(s) at the start of every battle.",
           "bonuses": [
             "Hero startEnergyLevelsBonus +2"
           ],
@@ -3753,7 +3845,7 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_faction_nature_3",
               "name": "Child of the Woods",
-              "desc": "+{0} maximum mana."
+              "desc": "+{0} maximum mana."
             }
           ]
         },
@@ -3761,7 +3853,7 @@ window.OE_SKILLS_DATA = {
           "level": 3,
           "icon": "skill_faction_nature_3",
           "name": "Expert Murmuring",
-          "desc": "Generates {0} Focus Charge(s) at the start of every battle.",
+          "desc": "Generates {0} Focus Charge(s) at the start of every battle.",
           "bonuses": [
             "Hero startEnergyLevelsBonus +3"
           ],
@@ -3769,17 +3861,17 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_faction_nature_new_4",
               "name": "Just One More Time",
-              "desc": "Whenever friendly creatures or the hero spend Focus, the cooldowns of all the hero’s spells are reduced by {0} round(s)."
+              "desc": "Every Focus Charge spent by friendly creatures or the hero reduces the cooldowns of all the hero’s spells by {0} round(s)."
             },
             {
               "id": "sub_skill_faction_nature_new_5",
               "name": "Burst of Energy",
-              "desc": "Whenever friendly creatures or the hero spend Focus, they gain +{0}% per hero level to the Damage dealt with Heroic Strike. This bonus lasts until the end of the battle."
+              "desc": "Every Focus Charge spent by friendly creatures or the hero increases Heroic Strike Damage by {0}% per hero level until the end of the round."
             },
             {
               "id": "sub_skill_faction_nature_new_6",
               "name": "Strong Connection",
-              "desc": "Whenever friendly creatures or the hero spend Focus, the hero gains +{0} to all attributes until the end of the battle."
+              "desc": "Every Focus Charge spent by friendly creatures or the hero increases all hero attributes by {0} until the end of the round."
             }
           ]
         }
@@ -3917,7 +4009,7 @@ window.OE_SKILLS_DATA = {
     {
       "id": "skill_faction_unfrozen",
       "name": "Abyssal Communion",
-      "baseDesc": "After each battle victory, the hero increases their Communion level by 1 (up to a max. of {0}).  Each level increases the number of friendly Schism units by {1}% until the end of the battle. Each morning, all heroes’ Communion level is halved.",
+      "baseDesc": "After each battle victory, the hero increases their Communion level by 1 (up to a max. of {0}). Each level increases the number of friendly Schism units by {1}% until the end of the battle. Each morning, all heroes’ Communion level is halved.",
       "group": "faction",
       "skillType": "Faction",
       "factionId": "schism",
@@ -3926,11 +4018,12 @@ window.OE_SKILLS_DATA = {
           "level": 1,
           "icon": "skill_faction_unfrozen",
           "name": "Basic Abyssal Communion",
-          "desc": "After each battle victory, the hero increases their Communion level by 1 (up to a max. of {0}).  Each level increases the number of friendly Schism units by {1}% until the end of the battle. Each morning, all heroes’ Communion level is halved.",
+          "desc": "After each battle victory, the hero increases their Communion level by 1 (up to a max. of {0}). Each level increases the number of friendly units by {1}% until the end of the battle. Each morning, all heroes’ Communion level is halved.",
           "bonuses": [
             "Hero energyEnablesSet unfrozen",
             "Hero energyValuesSet unfrozen",
-            "startBattleUnfrozenUnitCountBonus: temp 0.03"
+            "startBattleUnfrozenUnitCountBonus: temp 0.025",
+            "Hero enableUnfrozenBonusAllUnits true"
           ],
           "subskills": []
         },
@@ -3938,11 +4031,12 @@ window.OE_SKILLS_DATA = {
           "level": 2,
           "icon": "skill_faction_unfrozen_2",
           "name": "Advanced Abyssal Communion",
-          "desc": "After each battle victory, the hero increases their Communion level by 1 (up to a max. of {0}).  Each level increases the number of friendly Schism units by {1}% until the end of the battle. Each morning, all heroes’ Communion level is halved.",
+          "desc": "After each battle victory, the hero increases their Communion level by 1 (up to a max. of {0}). Each level increases the number of friendly units by {1}% until the end of the battle. Each morning, all heroes’ Communion level is halved.",
           "bonuses": [
             "Hero energyEnablesSet unfrozen",
             "Hero energyValuesSet unfrozen",
-            "startBattleUnfrozenUnitCountBonus: temp 0.03"
+            "startBattleUnfrozenUnitCountBonus: temp 0.025",
+            "Hero enableUnfrozenBonusAllUnits true"
           ],
           "subskills": [
             {
@@ -3958,7 +4052,7 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_faction_unfrozen_3",
               "name": "Call of the Void",
-              "desc": "Each morning, before the Communion level is halved, restores {0} mana per Communion level."
+              "desc": "Each morning, before the Communion level is halved, restores {0} mana per Communion level."
             }
           ]
         },
@@ -3966,17 +4060,18 @@ window.OE_SKILLS_DATA = {
           "level": 3,
           "icon": "skill_faction_unfrozen_3",
           "name": "Expert Abyssal Communion",
-          "desc": "After each battle victory, the hero increases their Communion level by 1 (up to a max. of {0}).  Each level increases the number of friendly Schism units by {1}% until the end of the battle. Each morning, all heroes’ Communion level is halved.",
+          "desc": "After each battle victory, the hero increases their Communion level by 1 (up to a max. of {0}). Each level increases the number of friendly units by {1}% until the end of the battle. Each morning, all heroes’ Communion level is halved.",
           "bonuses": [
             "Hero energyEnablesSet unfrozen",
             "Hero energyValuesSet unfrozen",
-            "startBattleUnfrozenUnitCountBonus: temp 0.03"
+            "startBattleUnfrozenUnitCountBonus: temp 0.025",
+            "Hero enableUnfrozenBonusAllUnits true"
           ],
           "subskills": [
             {
               "id": "sub_skill_faction_unfrozen_4",
               "name": "Black Ice",
-              "desc": "Enemy spells cost +{0} for each active Communion level."
+              "desc": "Enemy spells cost +{0} for each active Communion level."
             },
             {
               "id": "sub_skill_faction_unfrozen_5",
@@ -3986,7 +4081,7 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_faction_unfrozen_6",
               "name": "Celestial Abyss",
-              "desc": "Increases the number of friendly Schism units per Communion level by an additional {0}%."
+              "desc": "Increases the number of friendly units per Communion level by an additional {0}%."
             }
           ]
         }
@@ -4124,7 +4219,7 @@ window.OE_SKILLS_DATA = {
     {
       "id": "skill_faction_demons",
       "name": "Summon Swarm",
-      "baseDesc": "Once per round, lays eggs on the battlefield. At the start of next round, they spawn a stack of Fire Larvae. The stack has {0}% of the total HP of all Hive Spawns in its army, and the strength of its abilities scales with the hero’s level.",
+      "baseDesc": "Once per round, lays eggs on the battlefield. At the start of next round, they spawn a stack of Fire Larvae. The stack has {0}% of the total HP of all Hive Spawns in its army, and the strength of its abilities scales with the hero’s level.",
       "group": "faction",
       "skillType": "Faction",
       "factionId": "hive",
@@ -4133,7 +4228,7 @@ window.OE_SKILLS_DATA = {
           "level": 1,
           "icon": "skill_faction_demons",
           "name": "Basic Summon Swarm",
-          "desc": "Once per round, lays eggs on the battlefield. At the start of next round, they spawn a stack of Fire Larvae. The stack has {0}% of the total HP of all Hive Spawns in its army, and the strength of its abilities scales with the hero’s level.",
+          "desc": "Once per round, lays eggs on the battlefield. At the start of next round, they spawn a stack of Fire Larvae. The stack has {0}% of the total HP of all Hive Spawns in its army, and the strength of its abilities scales with the hero’s level.",
           "bonuses": [
             "hero ability: skill_faction_demon_ability",
             "hero ability: skill_faction_demon_ability_1"
@@ -4144,7 +4239,7 @@ window.OE_SKILLS_DATA = {
           "level": 2,
           "icon": "skill_faction_demons_2",
           "name": "Advanced Summon Swarm",
-          "desc": "Once per round, lays eggs on the battlefield. At the start of next round, they spawn a stack of Fire Larvae. The stack has {0}% of the total HP of all Hive Spawns in its army, and the strength of its abilities scales with the hero’s level.",
+          "desc": "Once per round, lays eggs on the battlefield. At the start of next round, they spawn a stack of Fire Larvae. The stack has {0}% of the total HP of all Hive Spawns in its army, and the strength of its abilities scales with the hero’s level.",
           "bonuses": [
             "hero ability: skill_faction_demon_ability",
             "hero ability: skill_faction_demon_ability_1"
@@ -4158,12 +4253,12 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_faction_demons_2",
               "name": "Thy Children",
-              "desc": "+{0} Fire Larvae spawned for every hero level."
+              "desc": "+{0} Fire Larvae spawned for every hero level."
             },
             {
-              "id": "sub_skill_faction_demons_3",
-              "name": "Ravage",
-              "desc": "Fire Larvae deal +{0} Damage."
+              "id": "sub_skill_faction_demons_4",
+              "name": "Hive Power",
+              "desc": "Reduces the cost of the “Premature Emergence” ability by –{0}."
             }
           ]
         },
@@ -4171,21 +4266,21 @@ window.OE_SKILLS_DATA = {
           "level": 3,
           "icon": "skill_faction_demons_3",
           "name": "Expert Summon Swarm",
-          "desc": "Once per round, lays eggs on the battlefield. At the start of next round, they spawn a stack of Fire Larvae. The stack has {0}% of the total HP of all Hive Spawns in its army, and the strength of its abilities scales with the hero’s level.",
+          "desc": "Once per round, lays eggs on the battlefield. At the start of next round, they spawn a stack of Fire Larvae. The stack has {0}% of the total HP of all Hive Spawns in its army, and the strength of its abilities scales with the hero’s level.",
           "bonuses": [
             "hero ability: skill_faction_demon_ability",
             "hero ability: skill_faction_demon_ability_1"
           ],
           "subskills": [
             {
-              "id": "sub_skill_faction_demons_4",
-              "name": "Hive Power",
-              "desc": "The hero gains {0} Luck and Morale."
+              "id": "sub_skill_faction_demons_3",
+              "name": "Ravage",
+              "desc": "Fire Larvae deal +{0} Damage."
             },
             {
               "id": "sub_skill_faction_demons_5",
               "name": "Hardened Shells",
-              "desc": "The clutch of eggs can withstand +{0} hit(s)."
+              "desc": "The clutch of eggs can withstand +{0} hit(s)."
             },
             {
               "id": "sub_skill_faction_demons_6",
@@ -4328,7 +4423,7 @@ window.OE_SKILLS_DATA = {
     {
       "id": "skill_faction_dungeon",
       "name": "Triumvirate’s Strength",
-      "baseDesc": "Once per round, the hero can activate one of the three Stances in battle. The active Stance grants the hero +{0} to the Stance’s corresponding attribute.",
+      "baseDesc": "Once per round, the hero can activate one of the three Stances in battle. The active Stance grants the hero +{0} to the Stance’s corresponding attribute.",
       "group": "faction",
       "skillType": "Faction",
       "factionId": "dungeon",
@@ -4337,7 +4432,7 @@ window.OE_SKILLS_DATA = {
           "level": 1,
           "icon": "skill_faction_dungeon",
           "name": "Basic Triumvirate’s Strength",
-          "desc": "Once per round, the hero can activate one of the three Stances in battle. The active Stance grants the hero +{0} to the Stance’s corresponding attribute.",
+          "desc": "Once per round, the hero can activate one of the three Stances in battle. The active Stance grants the hero +{0} to the Stance’s corresponding attribute.",
           "bonuses": [
             "hero ability: skill_faction_dungeon_ability_spellPower",
             "hero ability: skill_faction_dungeon_ability_defence",
@@ -4349,7 +4444,7 @@ window.OE_SKILLS_DATA = {
           "level": 2,
           "icon": "skill_faction_dungeon_2",
           "name": "Advanced Triumvirate’s Strength",
-          "desc": "Once per round, the hero can activate one of the three Stances in battle. The active Stance grants the hero +{0} to the Stance’s corresponding attribute.",
+          "desc": "Once per round, the hero can activate one of the three Stances in battle. The active Stance grants the hero +{0} to the Stance’s corresponding attribute.",
           "bonuses": [
             "hero ability: skill_faction_dungeon_ability_spellPower",
             "hero ability: skill_faction_dungeon_ability_defence",
@@ -4364,7 +4459,7 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_faction_dungeon_2",
               "name": "Alvarian Expertise",
-              "desc": "When selecting a Stance, the corresponding attribute of enemy hero partially decreases while the Stance is active."
+              "desc": "When selecting a Stance, the corresponding attribute of enemy hero partially decreases while the Stance is active."
             },
             {
               "id": "sub_skill_faction_dungeon_6",
@@ -4377,7 +4472,7 @@ window.OE_SKILLS_DATA = {
           "level": 3,
           "icon": "skill_faction_dungeon_3",
           "name": "Expert Triumvirate’s Strength",
-          "desc": "Once per round, the hero can activate one of the three Stances in battle. The active Stance grants the hero +{0} to the Stance’s corresponding attribute.",
+          "desc": "Once per round, the hero can activate one of the three Stances in battle. The active Stance grants the hero +{0} to the Stance’s corresponding attribute.",
           "bonuses": [
             "hero ability: skill_faction_dungeon_ability_spellPower",
             "hero ability: skill_faction_dungeon_ability_defence",
@@ -4387,17 +4482,17 @@ window.OE_SKILLS_DATA = {
             {
               "id": "sub_skill_faction_dungeon_4",
               "name": "Jack of All Trades",
-              "desc": "When selecting a Stance, the hero’s corresponding attribute increases by {0}% until the end of the battle."
+              "desc": "When selecting a Stance, the hero’s corresponding attribute increases by {0}% until the end of the battle."
             },
             {
               "id": "sub_skill_faction_dungeon_5",
               "name": "Flow",
-              "desc": "Generate {0} Focus Charge(s) each time the hero selects a Stance."
+              "desc": "Generates {0} Focus Charge(s) each time the hero selects a Stance."
             },
             {
               "id": "sub_skill_faction_dungeon_3",
               "name": "Opportunists",
-              "desc": "Friendly creatures gain {0} Initiative."
+              "desc": "Friendly creatures gain {0} Initiative."
             }
           ]
         }
@@ -4567,5 +4662,5 @@ window.OE_SKILLS_DATA = {
       "label": "Faction skills (one per faction)"
     }
   ],
-  "GENERATED_AT": "2026-05-10 06:41 UTC"
+  "GENERATED_AT": "2026-11-11 16:18 UTC"
 };

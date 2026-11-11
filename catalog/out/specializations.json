@@ -23,18 +23,18 @@
         "classType": "might",
         "heroes": [
           {
-            "id": "campaign_hero_3",
-            "name": "Valentina",
-            "faction": "human",
-            "classType": "might",
-            "source": "DB/heroes/campaign/campaign_hero_3.json"
-          },
-          {
             "id": "campaign_M9_hero_temple_main",
             "name": "Valentina",
             "faction": "human",
             "classType": "might",
             "source": "DB/heroes/campaign/campaign_M9_hero_temple_main.json"
+          },
+          {
+            "id": "campaign_hero_3",
+            "name": "Valentina",
+            "faction": "human",
+            "classType": "might",
+            "source": "DB/heroes/campaign/campaign_hero_3.json"
           }
         ],
         "bonuses": [
@@ -53,7 +53,7 @@
             ],
             "upgrade": {
               "increment": 0.01,
-              "levelStep": 4
+              "levelStep": 6
             }
           },
           {
@@ -67,7 +67,7 @@
             "type": "unitStat",
             "parameters": [
               "critChanceModifier",
-              "0.02"
+              "0.03"
             ],
             "upgrade": {
               "increment": 0.01,
@@ -136,7 +136,7 @@
         "id": "human_hero_10_specialization",
         "name": "Spiritual Vigor",
         "nameSid": "human_hero_10_spec_name",
-        "description": "+{3} spell cap for each Global Map spell. His maximum mana increases by {0}%, plus another {1}% for every {2} hero level(s).",
+        "description": "He can use each Global Map spell +{3} time(s) per day. His maximum mana increases by {0}%, plus another {1}% for every {2} hero level(s).",
         "descriptionSid": "human_hero_10_spec_alt_2_description",
         "descriptionArgs": [
           "current_specialization_perc_base_bonus",
@@ -149,18 +149,18 @@
         "classType": "magic",
         "heroes": [
           {
-            "id": "human_hero_10",
-            "name": "Merry Elias",
-            "faction": "human",
-            "classType": "magic",
-            "source": "DB/heroes/humans/human_hero_10.json"
-          },
-          {
             "id": "campaign_M4_hero_preacher",
             "name": "Preacher",
             "faction": "human",
             "classType": "magic",
             "source": "DB/heroes/campaign/campaign_M4_hero_preacher.json"
+          },
+          {
+            "id": "human_hero_10",
+            "name": "Merry Elias",
+            "faction": "human",
+            "classType": "magic",
+            "source": "DB/heroes/humans/human_hero_10.json"
           }
         ],
         "bonuses": [
@@ -168,11 +168,11 @@
             "type": "heroStat",
             "parameters": [
               "manaBonusPercent",
-              "0.10"
+              "0.20"
             ],
             "upgrade": {
               "increment": 0.05,
-              "levelStep": 5
+              "levelStep": 4
             }
           },
           {
@@ -278,7 +278,7 @@
             }
           },
           {
-            "activationLevel": 1,
+            "activationLevel": 2,
             "type": "heroStat",
             "parameters": [
               "statsNum",
@@ -286,11 +286,11 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 2
+              "levelStep": 3
             }
           },
           {
-            "activationLevel": 2,
+            "activationLevel": 3,
             "type": "heroStat",
             "parameters": [
               "statsNum",
@@ -298,7 +298,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 2
+              "levelStep": 3
             }
           },
           {
@@ -374,21 +374,21 @@
         ],
         "iconSid": "human_hero_12_specialization_icon",
         "faction": "human",
-        "classType": "magic",
+        "classType": "might",
         "heroes": [
-          {
-            "id": "human_hero_12",
-            "name": "Zenith",
-            "faction": "human",
-            "classType": "magic",
-            "source": "DB/heroes/humans/human_hero_12.json"
-          },
           {
             "id": "campaign_M4_hero_temple_3_alt",
             "name": "campaign_M4_hero_temple_3_alt",
             "faction": "human",
             "classType": "might",
             "source": "DB/heroes/campaign/campaign_M4_hero_temple_3 alt.json"
+          },
+          {
+            "id": "human_hero_12",
+            "name": "Zenith",
+            "faction": "human",
+            "classType": "magic",
+            "source": "DB/heroes/humans/human_hero_12.json"
           }
         ],
         "bonuses": [
@@ -448,7 +448,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -464,7 +464,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -481,7 +481,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -498,7 +498,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -575,18 +575,18 @@
         "classType": "magic",
         "heroes": [
           {
-            "id": "human_hero_13",
-            "name": "Lia the Untethered One",
-            "faction": "human",
-            "classType": "magic",
-            "source": "DB/heroes/humans/human_hero_13.json"
-          },
-          {
             "id": "tutorial_hero_2",
             "name": "tutorial_hero_2",
             "faction": "human",
             "classType": "magic",
             "source": "DB/heroes/campaign_tutorial/tutorial_hero_2.json"
+          },
+          {
+            "id": "human_hero_13",
+            "name": "Lia the Untethered One",
+            "faction": "human",
+            "classType": "magic",
+            "source": "DB/heroes/humans/human_hero_13.json"
           }
         ],
         "bonuses": [
@@ -780,7 +780,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -853,21 +853,21 @@
         ],
         "iconSid": "human_hero_15_specialization_icon",
         "faction": "human",
-        "classType": "magic",
+        "classType": "might",
         "heroes": [
-          {
-            "id": "human_hero_15",
-            "name": "Vesper",
-            "faction": "human",
-            "classType": "magic",
-            "source": "DB/heroes/humans/human_hero_15.json"
-          },
           {
             "id": "tutorial_hero_c1_10",
             "name": "tutorial_hero_c1_10",
             "faction": "human",
             "classType": "might",
             "source": "DB/heroes/campaign_tutorial/tutorial_hero_c1_10.json"
+          },
+          {
+            "id": "human_hero_15",
+            "name": "Vesper",
+            "faction": "human",
+            "classType": "magic",
+            "source": "DB/heroes/humans/human_hero_15.json"
           }
         ],
         "bonuses": [
@@ -887,7 +887,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -988,7 +988,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -1053,7 +1053,7 @@
         "id": "human_hero_17_specialization",
         "name": "Heart of Hearts",
         "nameSid": "human_hero_17_spec_name",
-        "description": "He starts with the “Masterful Vulnerability” spell. This version of the spell makes the target always take maximum Damage. \nWhile casting this spell, effective Spell Power is increased by {0} for every {1} hero level(s).",
+        "description": "He starts with the “Masterful Vulnerability” spell. The effect of this version of the spell is stackable.\nWhile casting this spell, effective Spell Power is increased by {0} for every {1} hero level(s).",
         "descriptionSid": "human_hero_17_spec_description",
         "descriptionArgs": [
           "current_specialization_magic_increment",
@@ -1064,18 +1064,18 @@
         "classType": "magic",
         "heroes": [
           {
-            "id": "human_hero_17",
-            "name": "Nadir",
-            "faction": "human",
-            "classType": "magic",
-            "source": "DB/heroes/humans/human_hero_17.json"
-          },
-          {
             "id": "campaign_M4_hero_temple_2",
             "name": "Cavalry Captain",
             "faction": "human",
             "classType": "magic",
             "source": "DB/heroes/campaign/campaign_M4_hero_temple_2.json"
+          },
+          {
+            "id": "human_hero_17",
+            "name": "Nadir",
+            "faction": "human",
+            "classType": "magic",
+            "source": "DB/heroes/humans/human_hero_17.json"
           }
         ],
         "bonuses": [
@@ -1095,7 +1095,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -1170,21 +1170,21 @@
         ],
         "iconSid": "human_hero_18_specialization_icon",
         "faction": "human",
-        "classType": "magic",
+        "classType": "might",
         "heroes": [
-          {
-            "id": "human_hero_18",
-            "name": "Clarissa",
-            "faction": "human",
-            "classType": "magic",
-            "source": "DB/heroes/humans/human_hero_18.json"
-          },
           {
             "id": "tutorial_hero_c1_11",
             "name": "tutorial_hero_c1_11",
             "faction": "human",
             "classType": "might",
             "source": "DB/heroes/campaign_tutorial/tutorial_hero_c1_11.json"
+          },
+          {
+            "id": "human_hero_18",
+            "name": "Clarissa",
+            "faction": "human",
+            "classType": "magic",
+            "source": "DB/heroes/humans/human_hero_18.json"
           }
         ],
         "bonuses": [
@@ -1483,18 +1483,18 @@
         "classType": "might",
         "heroes": [
           {
-            "id": "human_hero_3",
-            "name": "John Johnson",
-            "faction": "human",
-            "classType": "might",
-            "source": "DB/heroes/humans/human_hero_3.json"
-          },
-          {
             "id": "tutorial_hero_1",
             "name": "tutorial_hero_1",
             "faction": "human",
             "classType": "might",
             "source": "DB/heroes/campaign_tutorial/tutorial_hero_1.json"
+          },
+          {
+            "id": "human_hero_3",
+            "name": "John Johnson",
+            "faction": "human",
+            "classType": "might",
+            "source": "DB/heroes/humans/human_hero_3.json"
           }
         ],
         "bonuses": [
@@ -1554,7 +1554,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -1570,7 +1570,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -1587,7 +1587,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -1604,7 +1604,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -1747,7 +1747,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -1763,7 +1763,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -1780,7 +1780,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -1797,7 +1797,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -1898,7 +1898,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -1914,7 +1914,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -1931,7 +1931,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -1948,7 +1948,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -2023,28 +2023,35 @@
         ],
         "iconSid": "human_hero_5_specialization_icon",
         "faction": "human",
-        "classType": "magic",
+        "classType": "might",
         "heroes": [
           {
-            "id": "cm_fun_hero_human_1",
-            "name": "cm_fun_hero_human_1",
-            "faction": "human",
-            "classType": "magic",
-            "source": "DB/heroes/custom_maps/cm_fun_hero_human_1.json"
-          },
-          {
-            "id": "human_hero_5",
-            "name": "Aeos the Exalted",
+            "id": "tutorial_hero_3",
+            "name": "tutorial_hero_3",
             "faction": "human",
             "classType": "might",
-            "source": "DB/heroes/humans/human_hero_5.json"
+            "source": "DB/heroes/campaign_tutorial/tutorial_hero_3.json"
           },
           {
-            "id": "campaign_M9_hero_temple_1",
-            "name": "First Angel",
+            "id": "tutorial_hero_c1_13",
+            "name": "tutorial_hero_c1_13",
+            "faction": "human",
+            "classType": "might",
+            "source": "DB/heroes/campaign_tutorial/tutorial_hero_c1_13.json"
+          },
+          {
+            "id": "tutorial_hero_c1_8",
+            "name": "tutorial_hero_c1_8",
+            "faction": "human",
+            "classType": "might",
+            "source": "DB/heroes/campaign_tutorial/tutorial_hero_c1_8.json"
+          },
+          {
+            "id": "campaign_M9_hero_temple_5",
+            "name": "Fifth Angel",
             "faction": "human",
             "classType": "magic",
-            "source": "DB/heroes/campaign/campaign_M9_hero_temple_1.json"
+            "source": "DB/heroes/campaign/campaign_M9_hero_temple_5.json"
           },
           {
             "id": "campaign_M9_hero_temple_3",
@@ -2061,11 +2068,11 @@
             "source": "DB/heroes/campaign/campaign_M9_hero_temple_2.json"
           },
           {
-            "id": "campaign_M9_hero_temple_5",
-            "name": "Fifth Angel",
+            "id": "campaign_M9_hero_temple_1",
+            "name": "First Angel",
             "faction": "human",
             "classType": "magic",
-            "source": "DB/heroes/campaign/campaign_M9_hero_temple_5.json"
+            "source": "DB/heroes/campaign/campaign_M9_hero_temple_1.json"
           },
           {
             "id": "campaign_M9_hero_temple_4",
@@ -2075,25 +2082,18 @@
             "source": "DB/heroes/campaign/campaign_M9_hero_temple_4.json"
           },
           {
-            "id": "tutorial_hero_c1_8",
-            "name": "tutorial_hero_c1_8",
+            "id": "cm_fun_hero_human_1",
+            "name": "cm_fun_hero_human_1",
             "faction": "human",
-            "classType": "might",
-            "source": "DB/heroes/campaign_tutorial/tutorial_hero_c1_8.json"
+            "classType": "magic",
+            "source": "DB/heroes/custom_maps/cm_fun_hero_human_1.json"
           },
           {
-            "id": "tutorial_hero_c1_13",
-            "name": "tutorial_hero_c1_13",
+            "id": "human_hero_5",
+            "name": "Aeos the Exalted",
             "faction": "human",
             "classType": "might",
-            "source": "DB/heroes/campaign_tutorial/tutorial_hero_c1_13.json"
-          },
-          {
-            "id": "tutorial_hero_3",
-            "name": "tutorial_hero_3",
-            "faction": "human",
-            "classType": "might",
-            "source": "DB/heroes/campaign_tutorial/tutorial_hero_3.json"
+            "source": "DB/heroes/humans/human_hero_5.json"
           }
         ],
         "bonuses": [
@@ -2112,7 +2112,7 @@
             ],
             "upgrade": {
               "increment": 0.01,
-              "levelStep": 4
+              "levelStep": 6
             }
           },
           {
@@ -2190,11 +2190,11 @@
         "classType": "might",
         "heroes": [
           {
-            "id": "human_hero_6",
-            "name": "Heretic Avis",
+            "id": "tutorial_hero_c1_9",
+            "name": "tutorial_hero_c1_9",
             "faction": "human",
             "classType": "might",
-            "source": "DB/heroes/humans/human_hero_6.json"
+            "source": "DB/heroes/campaign_tutorial/tutorial_hero_c1_9.json"
           },
           {
             "id": "campaign_M4_hero_temple_1",
@@ -2204,11 +2204,11 @@
             "source": "DB/heroes/campaign/campaign_M4_hero_temple_1.json"
           },
           {
-            "id": "tutorial_hero_c1_9",
-            "name": "tutorial_hero_c1_9",
+            "id": "human_hero_6",
+            "name": "Heretic Avis",
             "faction": "human",
             "classType": "might",
-            "source": "DB/heroes/campaign_tutorial/tutorial_hero_c1_9.json"
+            "source": "DB/heroes/humans/human_hero_6.json"
           }
         ],
         "bonuses": [
@@ -2371,7 +2371,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -2387,7 +2387,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -2404,7 +2404,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -2421,7 +2421,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -2495,21 +2495,21 @@
         ],
         "iconSid": "human_hero_8_specialization_icon",
         "faction": "human",
-        "classType": "might",
+        "classType": "magic",
         "heroes": [
-          {
-            "id": "human_hero_8",
-            "name": "Lord Edgar",
-            "faction": "human",
-            "classType": "might",
-            "source": "DB/heroes/humans/human_hero_8.json"
-          },
           {
             "id": "campaign_M3_hero_temple",
             "name": "Zealous Templar",
             "faction": "human",
             "classType": "magic",
             "source": "DB/heroes/campaign/campaign_M3_hero_temple.json"
+          },
+          {
+            "id": "human_hero_8",
+            "name": "Lord Edgar",
+            "faction": "human",
+            "classType": "might",
+            "source": "DB/heroes/humans/human_hero_8.json"
           }
         ],
         "bonuses": [
@@ -2517,7 +2517,7 @@
             "type": "unitStat",
             "parameters": [
               "heroOffenceModifier",
-              "0.2"
+              "0.10"
             ],
             "upgrade": {
               "increment": 0.05,
@@ -2528,7 +2528,7 @@
             "type": "unitStat",
             "parameters": [
               "heroDefenceModifier",
-              "0.2"
+              "0.10"
             ],
             "upgrade": {
               "increment": 0.05,
@@ -2610,18 +2610,18 @@
         "classType": "might",
         "heroes": [
           {
-            "id": "human_hero_9",
-            "name": "Old Lord Mandall",
-            "faction": "human",
-            "classType": "might",
-            "source": "DB/heroes/humans/human_hero_9.json"
-          },
-          {
             "id": "campaign_M4_hero_temple_3",
             "name": "Cavalry Captain",
             "faction": "human",
             "classType": "might",
             "source": "DB/heroes/campaign/campaign_M4_hero_temple_3.json"
+          },
+          {
+            "id": "human_hero_9",
+            "name": "Old Lord Mandall",
+            "faction": "human",
+            "classType": "might",
+            "source": "DB/heroes/humans/human_hero_9.json"
           }
         ],
         "bonuses": [
@@ -2850,7 +2850,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -2866,7 +2866,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -2883,7 +2883,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -2900,7 +2900,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -3149,7 +3149,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -3165,7 +3165,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -3182,7 +3182,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -3199,7 +3199,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -3323,7 +3323,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -3339,7 +3339,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -3356,7 +3356,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -3373,7 +3373,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -4151,7 +4151,7 @@
             "type": "cityUnitsIncrement",
             "parameters": [
               "flicker",
-              "2"
+              "1"
             ]
           },
           {
@@ -4203,7 +4203,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -4219,7 +4219,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -4236,7 +4236,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -4253,7 +4253,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -4344,7 +4344,7 @@
             "type": "cityUnitsIncrement",
             "parameters": [
               "lich",
-              "2"
+              "1"
             ]
           },
           {
@@ -4396,7 +4396,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -4412,7 +4412,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -4429,7 +4429,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -4446,7 +4446,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -4537,7 +4537,7 @@
             "type": "cityUnitsIncrement",
             "parameters": [
               "graverobber",
-              "2"
+              "1"
             ]
           },
           {
@@ -4589,7 +4589,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -4605,7 +4605,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -4622,7 +4622,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -4639,7 +4639,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -4915,7 +4915,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -5005,13 +5005,6 @@
             "source": "DB/heroes/campaign/campaign_M5_hero_undead_2alt.json"
           },
           {
-            "id": "campaign_M9_hero_undead_npc",
-            "name": "campaign_M9_hero_undead_npc",
-            "faction": "undead",
-            "classType": "magic",
-            "source": "DB/heroes/campaign/campaign_M9_hero_undead_npc.json"
-          },
-          {
             "id": "campaign_M9_hero_necromancer_ambush",
             "name": "Necromancer",
             "faction": "undead",
@@ -5024,6 +5017,13 @@
             "faction": "undead",
             "classType": "magic",
             "source": "DB/heroes/campaign/campaign_M5_hero_undead_2.json"
+          },
+          {
+            "id": "campaign_M9_hero_undead_npc",
+            "name": "campaign_M9_hero_undead_npc",
+            "faction": "undead",
+            "classType": "magic",
+            "source": "DB/heroes/campaign/campaign_M9_hero_undead_npc.json"
           }
         ],
         "bonuses": [
@@ -5043,7 +5043,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -5127,18 +5127,18 @@
             "source": "DB/heroes/necros/necro_hero_17.json"
           },
           {
-            "id": "cm_fun_hero_1",
-            "name": "cm_fun_hero_1",
-            "faction": "undead",
-            "classType": "magic",
-            "source": "DB/heroes/custom_maps/cm_fun_hero_1.json"
-          },
-          {
             "id": "campaign_M9_hero_undead_4",
             "name": "Laura",
             "faction": "undead",
             "classType": "magic",
             "source": "DB/heroes/campaign/campaign_M9_hero_undead_4.json"
+          },
+          {
+            "id": "cm_fun_hero_1",
+            "name": "cm_fun_hero_1",
+            "faction": "undead",
+            "classType": "magic",
+            "source": "DB/heroes/custom_maps/cm_fun_hero_1.json"
           }
         ],
         "bonuses": [
@@ -5149,7 +5149,7 @@
               "0.05"
             ],
             "upgrade": {
-              "increment": 0.01,
+              "increment": 0.02,
               "levelStep": 5
             }
           },
@@ -5363,11 +5363,11 @@
             ],
             "upgrade": {
               "increment": -0.01,
-              "levelStep": 2
+              "levelStep": 4
             }
           },
           {
-            "activationLevel": 2,
+            "activationLevel": 4,
             "type": "unitStat",
             "parameters": [
               "modifierSet",
@@ -5377,11 +5377,11 @@
             ],
             "upgrade": {
               "increment": -0.01,
-              "levelStep": 2
+              "levelStep": 4
             }
           },
           {
-            "activationLevel": 2,
+            "activationLevel": 4,
             "type": "unitStat",
             "parameters": [
               "modifierSet",
@@ -5391,7 +5391,7 @@
             ],
             "upgrade": {
               "increment": -0.01,
-              "levelStep": 2
+              "levelStep": 4
             }
           },
           {
@@ -5487,11 +5487,11 @@
             "type": "heroStat",
             "parameters": [
               "diplomacyEfficiencyPerBonus",
-              "0.05"
+              "0.10"
             ],
             "upgrade": {
               "increment": 0.01,
-              "levelStep": 4
+              "levelStep": 3
             }
           },
           {
@@ -5596,7 +5596,7 @@
             "type": "cityUnitsIncrement",
             "parameters": [
               "skeleton",
-              "2"
+              "1"
             ]
           },
           {
@@ -5648,7 +5648,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -5664,7 +5664,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -5681,7 +5681,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -5698,7 +5698,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -5789,7 +5789,7 @@
             "type": "cityUnitsIncrement",
             "parameters": [
               "avatar_of_war",
-              "2"
+              "1"
             ]
           },
           {
@@ -5841,7 +5841,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -5857,7 +5857,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -5874,7 +5874,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -5891,7 +5891,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -5982,7 +5982,7 @@
             "type": "cityUnitsIncrement",
             "parameters": [
               "pet",
-              "2"
+              "1"
             ]
           },
           {
@@ -6034,7 +6034,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -6050,7 +6050,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -6067,7 +6067,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -6084,7 +6084,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -6292,7 +6292,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -6376,20 +6376,6 @@
             "source": "DB/heroes/necros/necro_hero_8.json"
           },
           {
-            "id": "campaign_M3_hero_undead",
-            "name": "Undead General",
-            "faction": "undead",
-            "classType": "might",
-            "source": "DB/heroes/campaign/campaign_M3_hero_undead.json"
-          },
-          {
-            "id": "tutorial_hero_c1_12",
-            "name": "tutorial_hero_c1_12",
-            "faction": "undead",
-            "classType": "might",
-            "source": "DB/heroes/campaign_tutorial/tutorial_hero_c1_12.json"
-          },
-          {
             "id": "tutorial_M_hero_2",
             "name": "tutorial_M_hero_2",
             "faction": "undead",
@@ -6402,6 +6388,20 @@
             "faction": "undead",
             "classType": "might",
             "source": "DB/heroes/campaign_tutorial/tutorial_hero_c1_14.json"
+          },
+          {
+            "id": "tutorial_hero_c1_12",
+            "name": "tutorial_hero_c1_12",
+            "faction": "undead",
+            "classType": "might",
+            "source": "DB/heroes/campaign_tutorial/tutorial_hero_c1_12.json"
+          },
+          {
+            "id": "campaign_M3_hero_undead",
+            "name": "Undead General",
+            "faction": "undead",
+            "classType": "might",
+            "source": "DB/heroes/campaign/campaign_M3_hero_undead.json"
           }
         ],
         "bonuses": [
@@ -6412,7 +6412,7 @@
               "0.05"
             ],
             "upgrade": {
-              "increment": 0.01,
+              "increment": 0.02,
               "levelStep": 5
             }
           },
@@ -6682,7 +6682,7 @@
         "id": "nature_hero_10_specialization",
         "name": "Spiritual Vigor",
         "nameSid": "nature_hero_10_spec_name",
-        "description": "+{3} spell cap for each Global Map spell. Her maximum mana increases by {0}%, plus another {1}% for every {2} hero level(s).",
+        "description": "She can use each Global Map spell +{3} time(s) per day. Her maximum mana increases by {0}%, plus another {1}% for every {2} hero level(s).",
         "descriptionSid": "nature_hero_10_spec_alt_2_description",
         "descriptionArgs": [
           "current_specialization_perc_base_bonus",
@@ -6707,11 +6707,11 @@
             "type": "heroStat",
             "parameters": [
               "manaBonusPercent",
-              "0.10"
+              "0.20"
             ],
             "upgrade": {
               "increment": 0.05,
-              "levelStep": 5
+              "levelStep": 4
             }
           },
           {
@@ -6794,21 +6794,21 @@
         ],
         "iconSid": "nature_hero_11_specialization_icon",
         "faction": "nature",
-        "classType": "magic",
+        "classType": "might",
         "heroes": [
-          {
-            "id": "nature_hero_11",
-            "name": "Elder Tss’kish",
-            "faction": "nature",
-            "classType": "magic",
-            "source": "DB/heroes/nature/nature_hero_11.json"
-          },
           {
             "id": "campaign_M4_hero_sylvan_3_alt",
             "name": "campaign_M4_hero_sylvan_3_alt",
             "faction": "nature",
             "classType": "might",
             "source": "DB/heroes/campaign/campaign_M4_hero_sylvan_3 alt.json"
+          },
+          {
+            "id": "nature_hero_11",
+            "name": "Elder Tss’kish",
+            "faction": "nature",
+            "classType": "magic",
+            "source": "DB/heroes/nature/nature_hero_11.json"
           }
         ],
         "bonuses": [
@@ -6868,7 +6868,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -6884,7 +6884,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -6901,7 +6901,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -6918,7 +6918,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -6995,18 +6995,18 @@
         "classType": "magic",
         "heroes": [
           {
-            "id": "nature_hero_12",
-            "name": "Aeliniel",
-            "faction": "nature",
-            "classType": "magic",
-            "source": "DB/heroes/nature/nature_hero_12.json"
-          },
-          {
             "id": "campaign_M4_hero_sylvan_3",
             "name": "Faun Captain",
             "faction": "nature",
             "classType": "magic",
             "source": "DB/heroes/campaign/campaign_M4_hero_sylvan_3.json"
+          },
+          {
+            "id": "nature_hero_12",
+            "name": "Aeliniel",
+            "faction": "nature",
+            "classType": "magic",
+            "source": "DB/heroes/nature/nature_hero_12.json"
           }
         ],
         "bonuses": [
@@ -7026,7 +7026,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -7126,7 +7126,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -7227,7 +7227,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -7327,7 +7327,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -7427,7 +7427,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -7522,12 +7522,24 @@
             "type": "heroStat",
             "parameters": [
               "spellPowerSidSet",
+              "bonus_magic_astral_summon_1",
+              "0"
+            ],
+            "upgrade": {
+              "increment": 1,
+              "levelStep": 2
+            }
+          },
+          {
+            "type": "heroStat",
+            "parameters": [
+              "spellPowerSidSet",
               "bonus_magic_astral_summon_nature_1",
               "0"
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -7541,12 +7553,24 @@
             "type": "heroStat",
             "parameters": [
               "spellPowerSidSet",
+              "bonus_magic_astral_summon_2",
+              "0"
+            ],
+            "upgrade": {
+              "increment": 1,
+              "levelStep": 2
+            }
+          },
+          {
+            "type": "heroStat",
+            "parameters": [
+              "spellPowerSidSet",
               "bonus_magic_astral_summon_nature_2",
               "0"
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -7560,12 +7584,24 @@
             "type": "heroStat",
             "parameters": [
               "spellPowerSidSet",
+              "bonus_magic_astral_summon_3",
+              "0"
+            ],
+            "upgrade": {
+              "increment": 1,
+              "levelStep": 2
+            }
+          },
+          {
+            "type": "heroStat",
+            "parameters": [
+              "spellPowerSidSet",
               "bonus_magic_astral_summon_nature_3",
               "0"
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -7579,12 +7615,24 @@
             "type": "heroStat",
             "parameters": [
               "spellPowerSidSet",
+              "bonus_magic_astral_summon_4",
+              "0"
+            ],
+            "upgrade": {
+              "increment": 1,
+              "levelStep": 2
+            }
+          },
+          {
+            "type": "heroStat",
+            "parameters": [
+              "spellPowerSidSet",
               "bonus_magic_astral_summon_nature_4",
               "0"
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -7598,12 +7646,24 @@
             "type": "heroStat",
             "parameters": [
               "spellPowerSidSet",
+              "bonus_magic_astral_summon_5",
+              "0"
+            ],
+            "upgrade": {
+              "increment": 1,
+              "levelStep": 2
+            }
+          },
+          {
+            "type": "heroStat",
+            "parameters": [
+              "spellPowerSidSet",
               "bonus_magic_astral_summon_nature_5",
               "0"
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -7668,7 +7728,7 @@
         "id": "nature_hero_18_specialization",
         "name": "Wandering Musician",
         "nameSid": "nature_hero_18_spec_name",
-        "description": "At the beginning of each round, he generates +{0} Focus Point(s), plus another +{1} for every {2} hero level(s). The enemy loses the same amount of Focus Points.",
+        "description": "At the beginning of each round <b>(except the first)</b>, he generates +{0} Focus Point(s), plus another +{1} for every {2} hero level(s). The enemy loses the same amount of Focus Points.",
         "descriptionSid": "nature_hero_18_spec_description",
         "descriptionArgs": [
           "current_specialization_flat_base_bonus",
@@ -7893,11 +7953,11 @@
             ],
             "upgrade": {
               "increment": 0.01,
-              "levelStep": 2
+              "levelStep": 4
             }
           },
           {
-            "activationLevel": 2,
+            "activationLevel": 4,
             "type": "unitStat",
             "parameters": [
               "modifierSet",
@@ -7907,11 +7967,11 @@
             ],
             "upgrade": {
               "increment": 0.01,
-              "levelStep": 2
+              "levelStep": 4
             }
           },
           {
-            "activationLevel": 2,
+            "activationLevel": 4,
             "type": "unitStat",
             "parameters": [
               "modifierSet",
@@ -7921,7 +7981,7 @@
             ],
             "upgrade": {
               "increment": 0.01,
-              "levelStep": 2
+              "levelStep": 4
             }
           },
           {
@@ -8000,11 +8060,11 @@
         "classType": "might",
         "heroes": [
           {
-            "id": "nature_hero_3",
-            "name": "Gingertail",
+            "id": "campaign_M4_hero_sylvan_2_alt",
+            "name": "campaign_M4_hero_sylvan_2_alt",
             "faction": "nature",
             "classType": "might",
-            "source": "DB/heroes/nature/nature_hero_3.json"
+            "source": "DB/heroes/campaign/campaign_M4_hero_sylvan_2 alt.json"
           },
           {
             "id": "campaign_M4_hero_sylvan_2",
@@ -8014,11 +8074,11 @@
             "source": "DB/heroes/campaign/campaign_M4_hero_sylvan_2.json"
           },
           {
-            "id": "campaign_M4_hero_sylvan_2_alt",
-            "name": "campaign_M4_hero_sylvan_2_alt",
+            "id": "nature_hero_3",
+            "name": "Gingertail",
             "faction": "nature",
             "classType": "might",
-            "source": "DB/heroes/campaign/campaign_M4_hero_sylvan_2 alt.json"
+            "source": "DB/heroes/nature/nature_hero_3.json"
           }
         ],
         "bonuses": [
@@ -8078,7 +8138,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -8094,7 +8154,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -8111,7 +8171,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -8128,7 +8188,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -8204,18 +8264,18 @@
         "classType": "might",
         "heroes": [
           {
-            "id": "nature_hero_4",
-            "name": "Old Pilgrim",
-            "faction": "nature",
-            "classType": "might",
-            "source": "DB/heroes/nature/nature_hero_4.json"
-          },
-          {
             "id": "campaign_M4_hero_sylvan_1",
             "name": "Old Pilgrim",
             "faction": "nature",
             "classType": "might",
             "source": "DB/heroes/campaign/campaign_M4_hero_sylvan_1.json"
+          },
+          {
+            "id": "nature_hero_4",
+            "name": "Old Pilgrim",
+            "faction": "nature",
+            "classType": "might",
+            "source": "DB/heroes/nature/nature_hero_4.json"
           }
         ],
         "bonuses": [
@@ -8235,7 +8295,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -8332,7 +8392,7 @@
             "type": "unitStat",
             "parameters": [
               "critChanceModifier",
-              "0.02"
+              "0.03"
             ],
             "upgrade": {
               "increment": 0.01,
@@ -8538,7 +8598,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -8627,11 +8687,11 @@
             "type": "heroStat",
             "parameters": [
               "diplomacyEfficiencyPerBonus",
-              "0.05"
+              "0.10"
             ],
             "upgrade": {
               "increment": 0.01,
-              "levelStep": 4
+              "levelStep": 3
             }
           },
           {
@@ -8737,7 +8797,7 @@
             }
           },
           {
-            "activationLevel": 1,
+            "activationLevel": 2,
             "type": "heroStat",
             "parameters": [
               "statsNum",
@@ -8745,11 +8805,11 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 2
+              "levelStep": 3
             }
           },
           {
-            "activationLevel": 2,
+            "activationLevel": 3,
             "type": "heroStat",
             "parameters": [
               "statsNum",
@@ -8757,7 +8817,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 2
+              "levelStep": 3
             }
           },
           {
@@ -8967,11 +9027,11 @@
         "classType": "magic",
         "heroes": [
           {
-            "id": "demon_hero_10",
-            "name": "Fleu",
+            "id": "campaign_M10_hero_demon_generic_6",
+            "name": "Groo",
             "faction": "demon",
             "classType": "magic",
-            "source": "DB/heroes/demons/demon_hero_10.json"
+            "source": "DB/heroes/campaign/campaign_M10_hero_demon_generic_6.json"
           },
           {
             "id": "campaign_M10_hero_demon_generic_5",
@@ -8981,11 +9041,11 @@
             "source": "DB/heroes/campaign/campaign_M10_hero_demon_generic_5.json"
           },
           {
-            "id": "campaign_M10_hero_demon_generic_6",
-            "name": "Groo",
+            "id": "demon_hero_10",
+            "name": "Fleu",
             "faction": "demon",
             "classType": "magic",
-            "source": "DB/heroes/campaign/campaign_M10_hero_demon_generic_6.json"
+            "source": "DB/heroes/demons/demon_hero_10.json"
           }
         ],
         "bonuses": [
@@ -9062,6 +9122,16 @@
               "4",
               "0"
             ]
+          },
+          {
+            "type": "battleSubskillBonus",
+            "receivers": [
+              "lava_larva"
+            ],
+            "parameters": [
+              "unit_buff",
+              "demon_mage_larva_bonus"
+            ]
           }
         ],
         "sourceFile": "DB/heroes_specializations/specializations_demon.json"
@@ -9104,14 +9174,14 @@
             }
           },
           {
-            "type": "unitBoolStat",
+            "type": "heroStat",
             "parameters": [
               "immuneToDebuffs",
               "true"
             ]
           },
           {
-            "type": "unitBoolStat",
+            "type": "heroStat",
             "parameters": [
               "enableImmuneDebufInMap",
               "true"
@@ -9170,6 +9240,16 @@
               "neutral",
               "4",
               "0"
+            ]
+          },
+          {
+            "type": "battleSubskillBonus",
+            "receivers": [
+              "lava_larva"
+            ],
+            "parameters": [
+              "unit_buff",
+              "demon_mage_larva_bonus"
             ]
           }
         ],
@@ -9272,6 +9352,16 @@
               "neutral",
               "4",
               "0"
+            ]
+          },
+          {
+            "type": "battleSubskillBonus",
+            "receivers": [
+              "lava_larva"
+            ],
+            "parameters": [
+              "unit_buff",
+              "demon_mage_larva_bonus"
             ]
           }
         ],
@@ -9493,7 +9583,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -9509,7 +9599,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -9526,7 +9616,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -9543,7 +9633,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -9599,6 +9689,16 @@
               "neutral",
               "4",
               "0"
+            ]
+          },
+          {
+            "type": "battleSubskillBonus",
+            "receivers": [
+              "lava_larva"
+            ],
+            "parameters": [
+              "unit_buff",
+              "demon_mage_larva_bonus"
             ]
           }
         ],
@@ -9686,7 +9786,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -9702,7 +9802,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -9719,7 +9819,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -9736,7 +9836,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -9792,6 +9892,16 @@
               "neutral",
               "4",
               "0"
+            ]
+          },
+          {
+            "type": "battleSubskillBonus",
+            "receivers": [
+              "lava_larva"
+            ],
+            "parameters": [
+              "unit_buff",
+              "demon_mage_larva_bonus"
             ]
           }
         ],
@@ -9812,18 +9922,18 @@
         "classType": "magic",
         "heroes": [
           {
-            "id": "demon_hero_15",
-            "name": "Mila",
-            "faction": "demon",
-            "classType": "magic",
-            "source": "DB/heroes/demons/demon_hero_15.json"
-          },
-          {
             "id": "campaign_M10_hero_demon_generic_4",
             "name": "Mila",
             "faction": "demon",
             "classType": "magic",
             "source": "DB/heroes/campaign/campaign_M10_hero_demon_generic_4.json"
+          },
+          {
+            "id": "demon_hero_15",
+            "name": "Mila",
+            "faction": "demon",
+            "classType": "magic",
+            "source": "DB/heroes/demons/demon_hero_15.json"
           }
         ],
         "bonuses": [
@@ -9843,7 +9953,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -9899,6 +10009,16 @@
               "neutral",
               "4",
               "0"
+            ]
+          },
+          {
+            "type": "battleSubskillBonus",
+            "receivers": [
+              "lava_larva"
+            ],
+            "parameters": [
+              "unit_buff",
+              "demon_mage_larva_bonus"
             ]
           }
         ],
@@ -10000,6 +10120,16 @@
               "neutral",
               "4",
               "0"
+            ]
+          },
+          {
+            "type": "battleSubskillBonus",
+            "receivers": [
+              "lava_larva"
+            ],
+            "parameters": [
+              "unit_buff",
+              "demon_mage_larva_bonus"
             ]
           }
         ],
@@ -10176,6 +10306,16 @@
               "4",
               "0"
             ]
+          },
+          {
+            "type": "battleSubskillBonus",
+            "receivers": [
+              "lava_larva"
+            ],
+            "parameters": [
+              "unit_buff",
+              "demon_mage_larva_bonus"
+            ]
           }
         ],
         "sourceFile": "DB/heroes_specializations/specializations_demon.json"
@@ -10193,13 +10333,13 @@
         ],
         "iconSid": "demon_hero_18_specialization_icon",
         "faction": "demon",
-        "classType": "magic",
+        "classType": "might",
         "heroes": [
           {
             "id": "demon_hero_18",
             "name": "Pauper",
             "faction": "demon",
-            "classType": "magic",
+            "classType": "might",
             "source": "DB/heroes/demons/demon_hero_18.json"
           }
         ],
@@ -10213,138 +10353,6 @@
             "upgrade": {
               "increment": 1,
               "levelStep": 8
-            }
-          },
-          {
-            "type": "heroBattleAbility",
-            "parameters": [
-              "skill_mage_ability",
-              "0"
-            ]
-          },
-          {
-            "type": "heroBattleAbility",
-            "battleType": "forCity",
-            "receiverRole": "attacker",
-            "parameters": [
-              "attack_siege_ability",
-              "0"
-            ]
-          },
-          {
-            "type": "heroStat",
-            "parameters": [
-              "magicSchoolSet",
-              "neutral",
-              "1",
-              "0"
-            ]
-          },
-          {
-            "activationLevel": 4,
-            "type": "heroStat",
-            "parameters": [
-              "magicSchoolSet",
-              "neutral",
-              "2",
-              "0"
-            ]
-          },
-          {
-            "activationLevel": 8,
-            "type": "heroStat",
-            "parameters": [
-              "magicSchoolSet",
-              "neutral",
-              "3",
-              "0"
-            ]
-          },
-          {
-            "activationLevel": 12,
-            "type": "heroStat",
-            "parameters": [
-              "magicSchoolSet",
-              "neutral",
-              "4",
-              "0"
-            ]
-          }
-        ],
-        "sourceFile": "DB/heroes_specializations/specializations_demon.json"
-      },
-      {
-        "id": "demon_hero_1_specialization",
-        "name": "Shooter",
-        "nameSid": "demon_hero_1_spec_name",
-        "description": "Creatures in her army deal +{0}% basic attack Damage, plus an additional {1}% for every {2} hero level(s). Additionally, they deal +{3}% Ranged and Long Reach Damage for every {4} hero level(s).",
-        "descriptionSid": "demon_hero_1_spec_description",
-        "descriptionArgs": [
-          "current_specialization_perc_base_bonus_alt",
-          "current_specialization_perc_increment",
-          "current_specialization_perc_level_step",
-          "current_specialization_perc_increment",
-          "current_specialization_perc_level_step"
-        ],
-        "iconSid": "demon_hero_1_specialization_icon",
-        "faction": "demon",
-        "classType": "might",
-        "heroes": [
-          {
-            "id": "demon_hero_1",
-            "name": "Niev",
-            "faction": "demon",
-            "classType": "might",
-            "source": "DB/heroes/demons/demon_hero_1.json"
-          },
-          {
-            "id": "campaign_M10_hero_demon_generic_1",
-            "name": "Niev",
-            "faction": "demon",
-            "classType": "might",
-            "source": "DB/heroes/campaign/campaign_M10_hero_demon_generic_1.json"
-          }
-        ],
-        "bonuses": [
-          {
-            "type": "unitStat",
-            "parameters": [
-              "modifierSet",
-              "outDmgMods",
-              "basic_attack",
-              "0.10"
-            ],
-            "upgrade": {
-              "increment": 0.01,
-              "levelStep": 2
-            }
-          },
-          {
-            "activationLevel": 2,
-            "type": "unitStat",
-            "parameters": [
-              "modifierSet",
-              "outDmgMods",
-              "range_attack",
-              "0.01"
-            ],
-            "upgrade": {
-              "increment": 0.01,
-              "levelStep": 2
-            }
-          },
-          {
-            "activationLevel": 2,
-            "type": "unitStat",
-            "parameters": [
-              "modifierSet",
-              "outDmgMods",
-              "shoot_attack",
-              "0.01"
-            ],
-            "upgrade": {
-              "increment": 0.01,
-              "levelStep": 2
             }
           },
           {
@@ -10401,6 +10409,158 @@
               "4",
               "0"
             ]
+          },
+          {
+            "type": "battleSubskillBonus",
+            "receivers": [
+              "lava_larva"
+            ],
+            "parameters": [
+              "unit_buff",
+              "demon_warrior_larva_bonus"
+            ]
+          }
+        ],
+        "sourceFile": "DB/heroes_specializations/specializations_demon.json"
+      },
+      {
+        "id": "demon_hero_1_specialization",
+        "name": "Shooter",
+        "nameSid": "demon_hero_1_spec_name",
+        "description": "Creatures in her army deal +{0}% basic attack Damage, plus an additional {1}% for every {2} hero level(s). Additionally, they deal +{3}% Ranged and Long Reach Damage for every {4} hero level(s).",
+        "descriptionSid": "demon_hero_1_spec_description",
+        "descriptionArgs": [
+          "current_specialization_perc_base_bonus_alt",
+          "current_specialization_perc_increment",
+          "current_specialization_perc_level_step",
+          "current_specialization_perc_increment",
+          "current_specialization_perc_level_step"
+        ],
+        "iconSid": "demon_hero_1_specialization_icon",
+        "faction": "demon",
+        "classType": "might",
+        "heroes": [
+          {
+            "id": "campaign_M10_hero_demon_generic_1",
+            "name": "Niev",
+            "faction": "demon",
+            "classType": "might",
+            "source": "DB/heroes/campaign/campaign_M10_hero_demon_generic_1.json"
+          },
+          {
+            "id": "demon_hero_1",
+            "name": "Niev",
+            "faction": "demon",
+            "classType": "might",
+            "source": "DB/heroes/demons/demon_hero_1.json"
+          }
+        ],
+        "bonuses": [
+          {
+            "type": "unitStat",
+            "parameters": [
+              "modifierSet",
+              "outDmgMods",
+              "basic_attack",
+              "0.10"
+            ],
+            "upgrade": {
+              "increment": 0.01,
+              "levelStep": 4
+            }
+          },
+          {
+            "activationLevel": 4,
+            "type": "unitStat",
+            "parameters": [
+              "modifierSet",
+              "outDmgMods",
+              "range_attack",
+              "0.01"
+            ],
+            "upgrade": {
+              "increment": 0.01,
+              "levelStep": 4
+            }
+          },
+          {
+            "activationLevel": 4,
+            "type": "unitStat",
+            "parameters": [
+              "modifierSet",
+              "outDmgMods",
+              "shoot_attack",
+              "0.01"
+            ],
+            "upgrade": {
+              "increment": 0.01,
+              "levelStep": 4
+            }
+          },
+          {
+            "type": "heroBattleAbility",
+            "parameters": [
+              "skill_warrior_ability",
+              "0"
+            ]
+          },
+          {
+            "type": "heroBattleAbility",
+            "battleType": "forCity",
+            "receiverRole": "attacker",
+            "parameters": [
+              "attack_siege_ability",
+              "0"
+            ]
+          },
+          {
+            "type": "heroStat",
+            "parameters": [
+              "magicSchoolSet",
+              "neutral",
+              "1",
+              "0"
+            ]
+          },
+          {
+            "activationLevel": 4,
+            "type": "heroStat",
+            "parameters": [
+              "magicSchoolSet",
+              "neutral",
+              "2",
+              "0"
+            ]
+          },
+          {
+            "activationLevel": 8,
+            "type": "heroStat",
+            "parameters": [
+              "magicSchoolSet",
+              "neutral",
+              "3",
+              "0"
+            ]
+          },
+          {
+            "activationLevel": 12,
+            "type": "heroStat",
+            "parameters": [
+              "magicSchoolSet",
+              "neutral",
+              "4",
+              "0"
+            ]
+          },
+          {
+            "type": "battleSubskillBonus",
+            "receivers": [
+              "lava_larva"
+            ],
+            "parameters": [
+              "unit_buff",
+              "demon_warrior_larva_bonus"
+            ]
           }
         ],
         "sourceFile": "DB/heroes_specializations/specializations_demon.json"
@@ -10423,18 +10583,18 @@
         "classType": "might",
         "heroes": [
           {
-            "id": "demon_hero_2",
-            "name": "Maelstrom",
-            "faction": "demon",
-            "classType": "might",
-            "source": "DB/heroes/demons/demon_hero_2.json"
-          },
-          {
             "id": "campaign_M10_hero_demon_generic_2",
             "name": "Maelstrom",
             "faction": "demon",
             "classType": "might",
             "source": "DB/heroes/campaign/campaign_M10_hero_demon_generic_2.json"
+          },
+          {
+            "id": "demon_hero_2",
+            "name": "Maelstrom",
+            "faction": "demon",
+            "classType": "might",
+            "source": "DB/heroes/demons/demon_hero_2.json"
           }
         ],
         "bonuses": [
@@ -10494,7 +10654,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -10510,7 +10670,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -10527,7 +10687,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -10544,7 +10704,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -10600,6 +10760,16 @@
               "neutral",
               "4",
               "0"
+            ]
+          },
+          {
+            "type": "battleSubskillBonus",
+            "receivers": [
+              "lava_larva"
+            ],
+            "parameters": [
+              "unit_buff",
+              "demon_warrior_larva_bonus"
             ]
           }
         ],
@@ -10643,7 +10813,7 @@
             }
           },
           {
-            "activationLevel": 1,
+            "activationLevel": 2,
             "type": "heroStat",
             "parameters": [
               "statsNum",
@@ -10651,11 +10821,11 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 2
+              "levelStep": 3
             }
           },
           {
-            "activationLevel": 2,
+            "activationLevel": 3,
             "type": "heroStat",
             "parameters": [
               "statsNum",
@@ -10663,7 +10833,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 2
+              "levelStep": 3
             }
           },
           {
@@ -10719,6 +10889,16 @@
               "neutral",
               "4",
               "0"
+            ]
+          },
+          {
+            "type": "battleSubskillBonus",
+            "receivers": [
+              "lava_larva"
+            ],
+            "parameters": [
+              "unit_buff",
+              "demon_warrior_larva_bonus"
             ]
           }
         ],
@@ -10806,7 +10986,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -10822,7 +11002,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -10839,7 +11019,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -10856,7 +11036,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -10912,6 +11092,16 @@
               "neutral",
               "4",
               "0"
+            ]
+          },
+          {
+            "type": "battleSubskillBonus",
+            "receivers": [
+              "lava_larva"
+            ],
+            "parameters": [
+              "unit_buff",
+              "demon_warrior_larva_bonus"
             ]
           }
         ],
@@ -11287,25 +11477,25 @@
         "classType": "might",
         "heroes": [
           {
-            "id": "demon_hero_6",
-            "name": "Tavi",
-            "faction": "demon",
-            "classType": "might",
-            "source": "DB/heroes/demons/demon_hero_6.json"
-          },
-          {
             "id": "campaign_M10_hero_demon_generic_3",
             "name": "Tavi",
             "faction": "demon",
             "classType": "might",
             "source": "DB/heroes/campaign/campaign_M10_hero_demon_generic_3.json"
+          },
+          {
+            "id": "demon_hero_6",
+            "name": "Tavi",
+            "faction": "demon",
+            "classType": "magic",
+            "source": "DB/heroes/demons/demon_hero_6.json"
           }
         ],
         "bonuses": [
           {
             "type": "heroBattleAbility",
             "parameters": [
-              "skill_warrior_ability",
+              "skill_mage_ability",
               "0"
             ]
           },
@@ -11355,6 +11545,16 @@
               "neutral",
               "4",
               "0"
+            ]
+          },
+          {
+            "type": "battleSubskillBonus",
+            "receivers": [
+              "lava_larva"
+            ],
+            "parameters": [
+              "unit_buff",
+              "demon_mage_larva_bonus"
             ]
           }
         ],
@@ -11442,7 +11642,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -11458,7 +11658,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -11475,7 +11675,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -11492,7 +11692,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -11548,6 +11748,16 @@
               "neutral",
               "4",
               "0"
+            ]
+          },
+          {
+            "type": "battleSubskillBonus",
+            "receivers": [
+              "lava_larva"
+            ],
+            "parameters": [
+              "unit_buff",
+              "demon_warrior_larva_bonus"
             ]
           }
         ],
@@ -11593,7 +11803,7 @@
             ],
             "upgrade": {
               "increment": 0.01,
-              "levelStep": 4
+              "levelStep": 6
             }
           },
           {
@@ -11649,6 +11859,16 @@
               "neutral",
               "4",
               "0"
+            ]
+          },
+          {
+            "type": "battleSubskillBonus",
+            "receivers": [
+              "lava_larva"
+            ],
+            "parameters": [
+              "unit_buff",
+              "demon_warrior_larva_bonus"
             ]
           }
         ],
@@ -11757,6 +11977,16 @@
               "neutral",
               "4",
               "0"
+            ]
+          },
+          {
+            "type": "battleSubskillBonus",
+            "receivers": [
+              "lava_larva"
+            ],
+            "parameters": [
+              "unit_buff",
+              "demon_warrior_larva_bonus"
             ]
           }
         ],
@@ -11913,15 +12143,8 @@
         "descriptionArgs": [],
         "iconSid": "unfrozen_hero_2_specialization_icon",
         "faction": "unfrozen",
-        "classType": "might",
+        "classType": "magic",
         "heroes": [
-          {
-            "id": "campaign_M6_hero_unfrozen",
-            "name": "???",
-            "faction": "unfrozen",
-            "classType": "might",
-            "source": "DB/heroes/campaign/campaign_M6_hero_unfrozen.json"
-          },
           {
             "id": "campaign_hero_5",
             "name": "campaign_hero_5",
@@ -11935,6 +12158,13 @@
             "faction": "unfrozen",
             "classType": "might",
             "source": "DB/heroes/campaign/campaign_M4_hero_unfrozen.json"
+          },
+          {
+            "id": "campaign_M6_hero_unfrozen",
+            "name": "???",
+            "faction": "unfrozen",
+            "classType": "might",
+            "source": "DB/heroes/campaign/campaign_M6_hero_unfrozen.json"
           }
         ],
         "bonuses": [
@@ -11954,7 +12184,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -11973,7 +12203,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -11992,7 +12222,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -12011,7 +12241,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -12030,7 +12260,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -12127,11 +12357,11 @@
             ],
             "upgrade": {
               "increment": 0.01,
-              "levelStep": 2
+              "levelStep": 4
             }
           },
           {
-            "activationLevel": 2,
+            "activationLevel": 4,
             "type": "unitStat",
             "parameters": [
               "modifierSet",
@@ -12141,7 +12371,7 @@
             ],
             "upgrade": {
               "increment": 0.01,
-              "levelStep": 2
+              "levelStep": 4
             }
           },
           {
@@ -12238,11 +12468,11 @@
             ],
             "upgrade": {
               "increment": -0.01,
-              "levelStep": 2
+              "levelStep": 4
             }
           },
           {
-            "activationLevel": 2,
+            "activationLevel": 4,
             "type": "unitStat",
             "parameters": [
               "modifierSet",
@@ -12252,7 +12482,7 @@
             ],
             "upgrade": {
               "increment": -0.01,
-              "levelStep": 2
+              "levelStep": 4
             }
           },
           {
@@ -12395,7 +12625,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -12411,7 +12641,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -12428,7 +12658,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -12445,7 +12675,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -12588,7 +12818,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -12604,7 +12834,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -12621,7 +12851,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -12638,7 +12868,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -12964,7 +13194,7 @@
         "id": "unfrozen_hero_16_specialization",
         "name": "Magic Fortress",
         "nameSid": "unfrozen_hero_16_spec_name",
-        "description": "He starts with the “Masterful Carapace” spell. This version of the spell makes the target immune to negative effects and dispell.\nWhile casting this spell, effective Spell Power is increased by {0} for every {1} hero level(s).",
+        "description": "He starts with the “Masterful Carapace” spell. This version of the spell makes the target immune to negative effects and dispel effects.\nWhile casting this spell, effective Spell Power is increased by {0} for every {1} hero level(s).",
         "descriptionSid": "unfrozen_hero_16_spec_description",
         "descriptionArgs": [
           "current_specialization_magic_increment",
@@ -12999,7 +13229,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -13100,7 +13330,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -13440,11 +13670,11 @@
             "type": "heroStat",
             "parameters": [
               "magicAttackPerBonus",
-              "0.10"
+              "0.15"
             ],
             "upgrade": {
-              "increment": 0.01,
-              "levelStep": 2
+              "increment": 0.05,
+              "levelStep": 3
             }
           },
           {
@@ -13452,11 +13682,11 @@
             "receiverAllegiance": "enemy",
             "parameters": [
               "magicAttackPerBonus",
-              "-0.10"
+              "-0.15"
             ],
             "upgrade": {
-              "increment": -0.01,
-              "levelStep": 2
+              "increment": -0.05,
+              "levelStep": 3
             }
           },
           {
@@ -13707,7 +13937,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -13723,7 +13953,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -13740,7 +13970,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -13757,7 +13987,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -13900,7 +14130,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -13916,7 +14146,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -13933,7 +14163,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -13950,7 +14180,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -14093,7 +14323,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -14109,7 +14339,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -14126,7 +14356,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -14143,7 +14373,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -14413,12 +14643,24 @@
             "type": "heroStat",
             "parameters": [
               "spellPowerSidSet",
+              "bonus_magic_astral_summon_1",
+              "0"
+            ],
+            "upgrade": {
+              "increment": 1,
+              "levelStep": 2
+            }
+          },
+          {
+            "type": "heroStat",
+            "parameters": [
+              "spellPowerSidSet",
               "bonus_magic_astral_summon_unfrozen_1",
               "0"
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -14432,12 +14674,24 @@
             "type": "heroStat",
             "parameters": [
               "spellPowerSidSet",
+              "bonus_magic_astral_summon_2",
+              "0"
+            ],
+            "upgrade": {
+              "increment": 1,
+              "levelStep": 2
+            }
+          },
+          {
+            "type": "heroStat",
+            "parameters": [
+              "spellPowerSidSet",
               "bonus_magic_astral_summon_unfrozen_2",
               "0"
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -14451,12 +14705,24 @@
             "type": "heroStat",
             "parameters": [
               "spellPowerSidSet",
+              "bonus_magic_astral_summon_3",
+              "0"
+            ],
+            "upgrade": {
+              "increment": 1,
+              "levelStep": 2
+            }
+          },
+          {
+            "type": "heroStat",
+            "parameters": [
+              "spellPowerSidSet",
               "bonus_magic_astral_summon_unfrozen_3",
               "0"
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -14470,12 +14736,24 @@
             "type": "heroStat",
             "parameters": [
               "spellPowerSidSet",
+              "bonus_magic_astral_summon_4",
+              "0"
+            ],
+            "upgrade": {
+              "increment": 1,
+              "levelStep": 2
+            }
+          },
+          {
+            "type": "heroStat",
+            "parameters": [
+              "spellPowerSidSet",
               "bonus_magic_astral_summon_unfrozen_4",
               "0"
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -14489,12 +14767,24 @@
             "type": "heroStat",
             "parameters": [
               "spellPowerSidSet",
+              "bonus_magic_astral_summon_5",
+              "0"
+            ],
+            "upgrade": {
+              "increment": 1,
+              "levelStep": 2
+            }
+          },
+          {
+            "type": "heroStat",
+            "parameters": [
+              "spellPowerSidSet",
               "bonus_magic_astral_summon_unfrozen_5",
               "0"
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -14882,7 +15172,7 @@
             }
           },
           {
-            "activationLevel": 1,
+            "activationLevel": 2,
             "type": "heroStat",
             "parameters": [
               "statsNum",
@@ -14890,11 +15180,11 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 2
+              "levelStep": 3
             }
           },
           {
-            "activationLevel": 2,
+            "activationLevel": 3,
             "type": "heroStat",
             "parameters": [
               "statsNum",
@@ -14902,7 +15192,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 2
+              "levelStep": 3
             }
           },
           {
@@ -14991,11 +15281,11 @@
             "type": "heroStat",
             "parameters": [
               "magicAttackPerBonus",
-              "0.10"
+              "0.15"
             ],
             "upgrade": {
-              "increment": 0.01,
-              "levelStep": 2
+              "increment": 0.05,
+              "levelStep": 3
             }
           },
           {
@@ -15003,11 +15293,11 @@
             "receiverAllegiance": "enemy",
             "parameters": [
               "magicAttackPerBonus",
-              "-0.10"
+              "-0.15"
             ],
             "upgrade": {
-              "increment": -0.01,
-              "levelStep": 2
+              "increment": -0.05,
+              "levelStep": 3
             }
           },
           {
@@ -15108,7 +15398,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -15251,7 +15541,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -15267,7 +15557,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -15284,7 +15574,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -15301,7 +15591,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -15390,11 +15680,11 @@
             "type": "heroStat",
             "parameters": [
               "diplomacyEfficiencyPerBonus",
-              "0.05"
+              "0.10"
             ],
             "upgrade": {
               "increment": 0.01,
-              "levelStep": 4
+              "levelStep": 3
             }
           },
           {
@@ -15646,7 +15936,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -15662,7 +15952,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -15679,7 +15969,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -15696,7 +15986,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -16189,7 +16479,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -16205,7 +16495,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -16222,7 +16512,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -16239,7 +16529,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -16304,7 +16594,7 @@
         "id": "dungeon_hero_2_specialization",
         "name": "With One Eye Open",
         "nameSid": "dungeon_hero_2_spec_name",
-        "description": "He starts with the “Masterful Early Start” spell. This version of the spell cannot be dispelled by any means.\nWhile casting this spell, effective Spell Power is increased by {0} for every {1} hero level(s).",
+        "description": "He starts with the “Masterful Early Start” spell. This version of the spell affects all friendly creatures.\nWhile casting this spell, effective Spell Power is increased by {0} for every {1} hero level(s).",
         "descriptionSid": "dungeon_hero_2_spec_description",
         "descriptionArgs": [
           "current_specialization_magic_increment",
@@ -16339,7 +16629,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 2
             }
           },
           {
@@ -16643,7 +16933,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -16659,7 +16949,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -16676,7 +16966,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -16693,7 +16983,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -16836,7 +17126,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -16852,7 +17142,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -16869,7 +17159,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -16886,7 +17176,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -17029,7 +17319,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -17045,7 +17335,7 @@
             ],
             "upgrade": {
               "increment": 1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -17062,7 +17352,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -17079,7 +17369,7 @@
             ],
             "upgrade": {
               "increment": -1,
-              "levelStep": 3
+              "levelStep": 5
             }
           },
           {
@@ -17278,7 +17568,7 @@
             "type": "unitStat",
             "parameters": [
               "critChanceModifier",
-              "0.02"
+              "0.03"
             ],
             "upgrade": {
               "increment": 0.01,

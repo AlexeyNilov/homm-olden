@@ -4,6 +4,7 @@ HeroesOldenEra_Data
 
 # Extracted game data (also copyrighted; regenerated from Core.zip)
 catalog/raw/
+*.png
 
 # DB
 *.sqlite
