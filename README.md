@@ -49,14 +49,14 @@ JSONs and the site from a fresh checkout, you need a copy of the game.
    ```
 4. Build the catalog and docs:
    ```bash
-   python3 catalog/scripts/build_catalog.py
-   python3 catalog/scripts/build_classes_json.py
-   python3 catalog/scripts/build_specializations_json.py
-   python3 catalog/scripts/build_docs.py
+   python catalog/scripts/build_catalog.py
+   python catalog/scripts/build_classes_json.py
+   python catalog/scripts/build_specializations_json.py
+   python catalog/scripts/build_docs.py
    # optional analyses
-   python3 catalog/scripts/analysis_tier_list.py
-   python3 catalog/scripts/analysis_hero_score.py
-   python3 catalog/scripts/analysis_magic_coverage.py
+   python catalog/scripts/analysis_tier_list.py
+   python catalog/scripts/analysis_hero_score.py
+   python catalog/scripts/analysis_magic_coverage.py
    ```
 
 ## Notes

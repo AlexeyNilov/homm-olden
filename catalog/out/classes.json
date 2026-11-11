@@ -63,7 +63,7 @@
             "Leadership",
             "Luck"
           ],
-          "effect": "Heroic Strike deals +{0} basic Damage."
+          "effect": "Heroic Strike deals +{0} base Damage."
         },
         "Paragon": {
           "id": "sub_class_human_might_2",
@@ -290,7 +290,7 @@
             "Economy",
             "Tactics"
           ],
-          "effect": "Necromancy works for all creatures and not just the Undead."
+          "effect": "Each day restores the hero’s Necromantic Energy to its maximum."
         }
       }
     },
@@ -351,7 +351,7 @@
             "Leadership",
             "Insight"
           ],
-          "effect": "Generates maximum Focus Charges at the beginning of each round."
+          "effect": "Generates maximum Focus Charges at the beginning of each round, <b>except the first</b>."
         },
         "Fortune’s Favored": {
           "id": "sub_class_nature_might_2",
@@ -506,7 +506,7 @@
             "Insight",
             "Logistics"
           ],
-          "effect": "Grants a new battle ability. It allows the hero to consume a target corpse, gaining bonus Attack, Defense, and Spell Power until the end of battle."
+          "effect": "Grants a new ability. It allows the hero to consume a target corpse, gaining bonus Attack, Defense, and Spell Power until the end of battle."
         }
       }
     },
@@ -588,9 +588,9 @@
       "classType": "might",
       "skillsTable": "unfrozen_might_skills_table",
       "attack": 3,
-      "defence": 2,
+      "defence": 1,
       "power": 1,
-      "knowledge": 1,
+      "knowledge": 2,
       "statsBreakpointLevel": 24,
       "attackRollPre24": 0.25,
       "defenceRollPre24": 0.25,
@@ -650,7 +650,7 @@
             "Diplomacy",
             "Economy"
           ],
-          "effect": "Enemy loses all Focus Charges at the beginning of each round."
+          "effect": "Enemy loses all Focus Charges at the beginning of each round, <b>except the first</b>."
         }
       }
     },
@@ -733,8 +733,8 @@
       "skillsTable": "dungeon_might_skills_table",
       "attack": 2,
       "defence": 2,
-      "power": 2,
-      "knowledge": 1,
+      "power": 1,
+      "knowledge": 2,
       "statsBreakpointLevel": 24,
       "attackRollPre24": 0.3,
       "defenceRollPre24": 0.35,
